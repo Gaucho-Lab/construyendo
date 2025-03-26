@@ -27,14 +27,14 @@ const AboutSection = () => {
     },
   ];
 
-  const coreValues = [
-    'Quality Craftsmanship',
-    'Client Satisfaction',
-    'Timely Delivery',
-    'Sustainable Practices',
-    'Safety First',
-    'Transparent Communication',
-  ];
+  // const coreValues = [
+  //   'Quality Craftsmanship',
+  //   'Client Satisfaction',
+  //   'Timely Delivery',
+  //   'Sustainable Practices',
+  //   'Safety First',
+  //   'Transparent Communication',
+  // ];
 
   return (
     <section className="section bg-light">
