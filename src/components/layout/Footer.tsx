@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <Link to="/">
               <img 
-                src="/assets/logos/company-logo.png" 
+                src="./assets/logos/company-logo.png" 
                 alt="Construction Company" 
                 className="h-12 mb-4"
               />
@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6">Secciones</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-secondary transition-colors">Inicio</Link>
+                <Link to="/construyendo" className="text-gray-300 hover:text-secondary transition-colors">Inicio</Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-secondary transition-colors">Servicios</Link>

@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/construyendo' },
     { name: 'Servicios', path: '/services' },
     { name: 'Prestamos Personales', path: '/loans' },
     { name: 'Contacto', path: '/contact' },
@@ -66,7 +66,7 @@ const Navbar = () => {
         >
           <Link to="/" className="z-50">
             <img 
-              src="/assets/logos/logo-amc.png" 
+              src="./assets/logos/logo-amc.png" 
               alt="Construction Company" 
               className="h-10 md:h-20"
             />

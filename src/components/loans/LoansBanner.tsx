@@ -12,7 +12,7 @@ const LoansBanner = () => {
           loop
           playsInline
         >
-          <source src="/videos/handshake.mp4" type="video/mp4" />
+          <source src="./videos/handshake.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-dark/80 to-dark/50" />
       </div>

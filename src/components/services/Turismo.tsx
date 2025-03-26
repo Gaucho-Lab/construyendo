@@ -43,7 +43,7 @@ const Turismo = () => {
       ref={sectionRef}
       className="relative py-20 md:py-24 lg:py-32 bg-cover bg-center"
       style={{
-        backgroundImage: "url('/assets/images/turismo.jpg')",
+        backgroundImage: "url('./assets/images/turismo.jpg')",
         backgroundAttachment: "fixed"
       }}
     >
