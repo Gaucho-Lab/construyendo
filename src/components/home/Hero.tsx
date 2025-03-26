@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 bg-orange-500">
         <img
-          src="/assets/images/hero-banner.jpg"
+          src="./assets/images/hero-banner.jpg"
           alt="Construction site with modern building"
           className="w-full h-full object-cover opacity-70"
         />

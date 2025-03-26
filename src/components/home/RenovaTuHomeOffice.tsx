@@ -14,7 +14,7 @@ const RenovaHO = () => {
             viewport={{ once: true }}
           >
             <img
-                src="/assets/images/HO-image.png"
+                src="./assets/images/HO-image.png"
                 alt="Construction team at work site"
                 className="max-w-[600px] w-full h-auto"
               />

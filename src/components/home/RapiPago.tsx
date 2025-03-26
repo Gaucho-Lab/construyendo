@@ -39,7 +39,7 @@ const ParallaxSection = () => {
       ref={sectionRef}
       className="relative py-20 md:py-24 lg:py-32 bg-cover bg-center"
       style={{
-        backgroundImage: "url('/assets/images/rapipago-bg.jpg')",
+        backgroundImage: "url('./assets/images/rapipago-bg.jpg')",
         backgroundAttachment: "fixed"
       }}
     >
@@ -58,7 +58,7 @@ const ParallaxSection = () => {
           {/* First Image */}
           <div className="w-full md:w-1/2 max-w-lg mt-8 md:mt-0 flex justify-center">
             <img 
-              src="/assets/images/munipagos.png" 
+              src="./assets/images/munipagos.png" 
               alt="Featured content 1" 
               className="h-20"
             />
@@ -67,7 +67,7 @@ const ParallaxSection = () => {
           {/* Second Image */}
           <div className="w-full md:w-1/2 max-w-lg mt-8 md:mt-0 flex justify-center">
             <img 
-              src="/assets/images/rapipago.png" 
+              src="./assets/images/rapipago.png" 
               alt="Featured content 2" 
               className="h-20"
             />

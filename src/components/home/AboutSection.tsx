@@ -44,7 +44,7 @@ const AboutSection = () => {
           <AnimatedElement animation="slide-in-right" className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/assets/images/construction.jpg"
+                src="./assets/images/construction.jpg"
                 alt="Construction team at work site"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

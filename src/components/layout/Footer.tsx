@@ -105,7 +105,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="/assets/images/WhatsApp.svg"
+            src="./assets/images/WhatsApp.svg"
             alt="Contact us on WhatsApp"
             className="w-8 h-8"
           />
