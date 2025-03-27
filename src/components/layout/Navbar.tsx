@@ -64,7 +64,7 @@ const Navbar = () => {
           animate="visible"
           variants={navbarVariants}
         >
-          <Link to="/" className="z-50">
+          <Link to="/construyendo" className="z-50">
             <img 
               src="./assets/logos/logo-amc.png" 
               alt="Construction Company" 
