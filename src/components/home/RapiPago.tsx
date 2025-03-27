@@ -50,7 +50,7 @@ const ParallaxSection = () => {
       <div className="relative container mx-auto px-6 z-10">
         {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
-          PAGA TUS IMPUESTOS
+          PAGÁ TUS IMPUESTOS
         </h2>
         
         {/* Images Container - Horizontal on desktop, Vertical on mobile */}

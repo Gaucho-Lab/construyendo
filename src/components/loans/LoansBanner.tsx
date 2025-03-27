@@ -26,7 +26,7 @@ const LoansBanner = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-secondary font-semibold text-xl mb-4">
-              Flexible Financing Solutions
+              Soluciones Flexibles de Financiación
             </h4>
           </motion.div>
 
@@ -36,7 +36,7 @@ const LoansBanner = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Personal Loans
+              Préstamos Personales
             </h1>
           </motion.div>
 
@@ -46,7 +46,7 @@ const LoansBanner = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-lg text-gray-200">
-              Make your construction project affordable with our competitive rates and flexible terms.
+              Creá to proyecto de construcción accesible con nuestras tasas competitivas y términos flexibles.
             </p>
           </motion.div>
         </div>

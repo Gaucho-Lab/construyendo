@@ -45,7 +45,7 @@ const AboutSection = () => {
             <div className="relative">
               <img
                 src="./assets/images/construction.jpg"
-                alt="Construction team at work site"
+                alt="Construccion en equipo"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* <div className="absolute -bottom-8 -right-8 bg-primary text-white p-6 rounded-lg shadow-lg hidden md:block">
@@ -58,7 +58,7 @@ const AboutSection = () => {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <SectionTitle
-              subtitle="About Our Company"
+              subtitle="Sobre nuestra compañía"
               title="Construyendo – Asociación Mutual"
               description="Es una entidad civil constituida por personas inspiradas en la ayuda mutua y el bienestar de nuestros afiliados. Por eso ponemos a su alcance múltiples servicios y prestaciones a fin de cubrir todos los aspectos que hacen a su seguridad y satisfacción y la de su familia."
             />
@@ -84,7 +84,7 @@ const AboutSection = () => {
 
             <AnimatedElement animation="slide-up" delay={0.5}>
               <Button to="/services">
-                Discover Our Services
+                Descubrí Nuestros Servicios
               </Button>
             </AnimatedElement>
 

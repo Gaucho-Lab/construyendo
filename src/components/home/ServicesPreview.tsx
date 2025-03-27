@@ -15,7 +15,7 @@ const ServicesPreview = () => {
         <SectionTitle
           subtitle=""
           title="Nuestros servicios"
-          description="We offer a comprehensive range of construction services tailored to meet your specific needs, whether for residential, commercial, or industrial projects."
+          description="Ofrecemos un rango de servicios de construcción apuntado a satisfacer tus necesidades especificas, residenciales, comerciales e industriales."
           center
         />
 
@@ -37,7 +37,7 @@ const ServicesPreview = () => {
                     to={`/services#${service.id}`} 
                     className="text-primary font-semibold hover:text-primary/80 transition-colors"
                   >
-                    Learn More →
+                    Saber Más →
                   </Link>
                 </div>
               </Card>
@@ -47,7 +47,7 @@ const ServicesPreview = () => {
 
         <AnimatedElement animation="fade-in" delay={0.4} className="flex justify-center mt-12">
           <Button to="/services" size="lg">
-            View All Services
+            Ver Todos Los Servicios
           </Button>
         </AnimatedElement>
       </div>

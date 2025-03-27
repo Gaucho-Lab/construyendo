@@ -26,7 +26,7 @@ const ContactBanner = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-secondary font-semibold text-xl mb-4">
-              We're Here to Help
+              Estamos Para Ayudarte
             </h4>
           </motion.div>
 
@@ -36,7 +36,7 @@ const ContactBanner = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Contact Us
+              Contactanos
             </h1>
           </motion.div>
 
@@ -46,7 +46,7 @@ const ContactBanner = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-lg text-gray-200">
-              Have questions or ready to start your project? Reach out to our team for expert guidance and support.
+              Tenés alguna duda, o querés empezar un nuevo proyecto? Contactate con nuestro equipo para recibir ayuda de nuestros profesionales.
             </p>
           </motion.div>
         </div>

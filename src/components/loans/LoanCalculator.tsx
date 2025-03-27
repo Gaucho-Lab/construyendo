@@ -56,7 +56,7 @@ const LoanCalculator = ({ onSubmit }: LoanCalculatorProps) => {
   return (
     <Card elevated className="w-full">
       <div className="p-6">
-        <h3 className="text-2xl font-bold mb-6">Loan Calculator</h3>
+        <h3 className="text-2xl font-bold mb-6">Calculador de cuotas</h3>
         
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -80,7 +80,7 @@ const LoanCalculator = ({ onSubmit }: LoanCalculatorProps) => {
           
           <div className="mb-4">
             <label className="block text-gray-700 font-semibold mb-2">
-              Interest Rate: {interestRate}%
+              Tasa de Interés: {interestRate}%
             </label>
             <input
               type="range"
@@ -99,45 +99,45 @@ const LoanCalculator = ({ onSubmit }: LoanCalculatorProps) => {
           
           <div className="mb-6">
             <label className="block text-gray-700 font-semibold mb-2">
-              Loan Term: {loanTerm / 12} {loanTerm === 12 ? 'Year' : 'Years'}
+              Tiempo del Préstamo: {loanTerm / 12} {loanTerm === 12 ? 'Year' : 'Years'}
             </label>
             <select
               value={loanTerm}
               onChange={(e) => setLoanTerm(parseInt(e.target.value))}
               className="w-full form-input"
             >
-              <option value="12">1 Year</option>
-              <option value="24">2 Years</option>
-              <option value="36">3 Years</option>
-              <option value="48">4 Years</option>
-              <option value="60">5 Years</option>
-              <option value="72">6 Years</option>
-              <option value="84">7 Years</option>
-              <option value="96">8 Years</option>
-              <option value="108">9 Years</option>
-              <option value="120">10 Years</option>
+              <option value="12">1 Año</option>
+              <option value="24">2 Años</option>
+              <option value="36">3 Años</option>
+              <option value="48">4 Años</option>
+              <option value="60">5 Años</option>
+              <option value="72">6 Años</option>
+              <option value="84">7 Años</option>
+              <option value="96">8 Años</option>
+              <option value="108">9 Años</option>
+              <option value="120">10 Años</option>
             </select>
           </div>
           
           <div className="bg-gray-100 p-4 rounded-lg mb-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center">
-                <p className="text-gray-600 text-sm">Monthly Payment</p>
+                <p className="text-gray-600 text-sm">Pagos Mensuales</p>
                 <p className="text-xl font-bold text-primary">{formatCurrency(monthlyPayment)}</p>
               </div>
               <div className="text-center">
-                <p className="text-gray-600 text-sm">Total Payment</p>
+                <p className="text-gray-600 text-sm">Pago total</p>
                 <p className="text-xl font-bold">{formatCurrency(totalPayment)}</p>
               </div>
               <div className="text-center">
-                <p className="text-gray-600 text-sm">Total Interest</p>
+                <p className="text-gray-600 text-sm">Intereses Totales</p>
                 <p className="text-xl font-bold text-secondary">{formatCurrency(totalInterest)}</p>
               </div>
             </div>
           </div>
           
           <Button type="submit" fullWidth size="lg">
-            Apply with These Terms
+            Aplicar a este préstamo
           </Button>
         </form>
       </div>

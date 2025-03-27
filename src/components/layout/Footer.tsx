@@ -19,7 +19,7 @@ const Footer = () => {
             </Link>
             <p className="text-gray-300 mb-6">
               Construyendo junto a vos desde 1985. 
-              Comprometidos con la excelencia y la satisfaccion del cliente.
+              Comprometidos con la excelencia y la satisfacción del cliente.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/construyendomutual/" className="text-gray-300 hover:text-secondary transition-colors" aria-label="Facebook">

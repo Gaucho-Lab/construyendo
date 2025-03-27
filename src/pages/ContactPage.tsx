@@ -4,7 +4,7 @@ import ContactInfo from '../components/contact/ContactInfo';
 // import MapLocation from '../components/contact/MapLocation';
 import SectionTitle from '../components/ui/SectionTitle';
 import AnimatedElement from '../components/ui/AnimatedElement';
-import { FaPhone, FaEnvelope, FaClock, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaClock, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
@@ -17,9 +17,9 @@ const ContactPage = () => {
             <div>
               <AnimatedElement animation="fade-in">
                 <SectionTitle
-                  subtitle="Get in Touch"
-                  title="Contact Information"
-                  description="Have questions or ready to start your project? Reach out to our team for assistance."
+                  subtitle="Contactanos"
+                  title="Información de contacto"
+                  description="Contactá a nustro equipo para recibir asistencia"
                 />
               </AnimatedElement>
               
@@ -27,27 +27,27 @@ const ContactPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <ContactInfo
                     icon={FaPhone}
-                    title="Phone"
+                    title="Teléfono"
                     content="(555) 123-4567"
                     link="tel:+15551234567"
                   />
                   <ContactInfo
                     icon={FaEnvelope}
-                    title="Email"
+                    title="Correo"
                     content="info@constructionco.com"
                     link="mailto:info@constructionco.com"
                   />
                   <ContactInfo
                     icon={FaClock}
-                    title="Working Hours"
+                    title="Horarios"
                     content="Mon-Fri: 8AM - 6PM"
                     secondLine="Sat: 9AM - 1PM"
                   />
                   <ContactInfo
                     icon={FaMapMarkerAlt}
-                    title="Address"
-                    content="123 Construction Ave"
-                    secondLine="Building City, State 12345"
+                    title="Direccion"
+                    content="Rioja 1150 - Local 2"
+                    secondLine="Rosario, Santa Fe"
                     link="https://maps.google.com"
                   />
                 </div>
@@ -55,19 +55,19 @@ const ContactPage = () => {
               
               <AnimatedElement animation="slide-up" delay={0.3} className="mt-12">
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-xl font-bold mb-4">Office Hours</h3>
+                  <h3 className="text-xl font-bold mb-4">Horarios de Oficina</h3>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between pb-2 border-b border-gray-200">
-                      <span className="font-medium">Monday - Friday</span>
+                      <span className="font-medium">Lunes - Viernes</span>
                       <span>8:00 AM - 6:00 PM</span>
                     </div>
                     <div className="flex items-center justify-between pb-2 border-b border-gray-200">
-                      <span className="font-medium">Saturday</span>
+                      <span className="font-medium">Sábados</span>
                       <span>9:00 AM - 1:00 PM</span>
                     </div>
                     <div className="flex items-center justify-between pb-2">
-                      <span className="font-medium">Sunday</span>
-                      <span>Closed</span>
+                      <span className="font-medium">Domingos</span>
+                      <span>Cerrado</span>
                     </div>
                   </div>
                 </div>
@@ -75,10 +75,10 @@ const ContactPage = () => {
               
               <AnimatedElement animation="slide-up" delay={0.4} className="mt-8">
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+                  <h3 className="text-xl font-bold mb-4">Seguinos</h3>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://www.facebook.com/construyendomutual/"
                       className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                       aria-label="Facebook"
                     >
@@ -93,22 +93,14 @@ const ContactPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="https://api.whatsapp.com/send?phone=543412125253&text=Hola!%20Quisiera%20realizar%20una%20consulta."
                       className="bg-sky-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors"
-                      aria-label="Twitter"
+                      aria-label="WhatsApp"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                      </svg>
+                      <FaWhatsapp />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/construyendomutual/"
                       className="bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
                       aria-label="Instagram"
                     >
@@ -123,19 +115,11 @@ const ContactPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="mailto:info@construyendo.org.ar"
                       className="bg-blue-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-900 transition-colors"
-                      aria-label="LinkedIn"
+                      aria-label="Email"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
+                      <FaEnvelope />
                     </a>
                   </div>
                 </div>
@@ -153,9 +137,9 @@ const ContactPage = () => {
         <div className="container-custom">
           <AnimatedElement animation="fade-in">
             <SectionTitle
-              subtitle="Find Us"
-              title="Our Location"
-              description="Visit our office to discuss your project in person. We're conveniently located in the heart of the city."
+              subtitle="Encontranos"
+              title="Nuestra Ubicación"
+              description="Visita nuestras oficinas para conversar sobre tu proyecto personalmente."
               center
             />
           </AnimatedElement>

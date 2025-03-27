@@ -65,9 +65,9 @@ const TestimonialsSection = () => {
 
       <div className="container-custom relative z-10">
         <SectionTitle
-          subtitle="Testimonials"
-          title="What Our Clients Say"
-          description="Hear directly from our clients about their experiences working with our construction team."
+          subtitle="Testimonios"
+          title="Lo Que Dicen Nuestros Clientes"
+          description="Lee lo que cuentan nuestros clientes sobre sus experiencias trabajando con nuestros equipos de construcción."
           center
           light
         />

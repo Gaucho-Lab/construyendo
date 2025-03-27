@@ -19,7 +19,7 @@ const RenovaHO = () => {
                 className="max-w-[600px] w-full h-auto"
               />
             <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-6">
-            Renova tu Home-Office
+            Renová tu Home-Office
             </h2>
           </motion.div>
 

@@ -1,7 +1,7 @@
 import Hero from '../components/home/Hero';
 import AboutSection from '../components/home/AboutSection';
 import ServicesPreview from '../components/home/ServicesPreview';
-import ProjectsShowcase from '../components/home/ProjectsShowcase';
+// import ProjectsShowcase from '../components/home/ProjectsShowcase';
 import TestimonialsSection from '../components/home/TestimonialsSection';
 import CtaSection from '../components/home/CtaSection';
 import RapiPago from '../components/home/RapiPago';
@@ -13,7 +13,7 @@ const HomePage = () => {
       <Hero />
       <AboutSection />
       <ServicesPreview />
-      <ProjectsShowcase />
+      {/* <ProjectsShowcase /> */}
       <TestimonialsSection />
       <RapiPago />
       <RenovaHO />

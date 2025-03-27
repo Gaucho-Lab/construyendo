@@ -38,13 +38,13 @@ const ContactForm = () => {
   return (
     <Card elevated>
       <div className="p-6">
-        <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
+        <h3 className="text-2xl font-bold mb-6">Envianos un mensajes</h3>
         
         {submitSuccess ? (
           <div className="text-center py-8">
             <div className="bg-green-100 text-green-800 p-4 rounded-lg mb-6">
-              <h3 className="text-xl font-bold mb-2">Message Sent!</h3>
-              <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
+              <h3 className="text-xl font-bold mb-2">Mensaje Enviado!</h3>
+              <p>Gracias por contactarte. Nos ponsdremos en contacto lo antes posible.</p>
             </div>
             <Button
               onClick={() => {
@@ -52,7 +52,7 @@ const ContactForm = () => {
                 reset();
               }}
             >
-              Send Another Message
+              Enviar Otro Mensaje
             </Button>
           </div>
         ) : (
@@ -60,7 +60,7 @@ const ContactForm = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                  Your Name*
+                  Nombre*
                 </label>
                 <input
                   id="name"
@@ -75,7 +75,7 @@ const ContactForm = () => {
               
               <div>
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                  Email Address*
+                  Correo Electrónico*
                 </label>
                 <input
                   id="email"
@@ -96,7 +96,7 @@ const ContactForm = () => {
               
               <div>
                 <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
-                  Phone Number
+                  Número de Teléfono
                 </label>
                 <input
                   id="phone"
@@ -108,13 +108,13 @@ const ContactForm = () => {
               
               <div>
                 <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
-                  Subject*
+                  Asunto*
                 </label>
                 <input
                   id="subject"
                   type="text"
                   className={`form-input ${errors.subject ? 'border-red-500' : ''}`}
-                  {...register('subject', { required: 'Subject is required' })}
+                  {...register('subject', { required: 'Asunto es necesario' })}
                 />
                 {errors.subject && (
                   <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>
@@ -123,13 +123,13 @@ const ContactForm = () => {
               
               <div className="md:col-span-2">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                  Message*
+                  Mensaje*
                 </label>
                 <textarea
                   id="message"
                   rows={5}
                   className={`form-input ${errors.message ? 'border-red-500' : ''}`}
-                  {...register('message', { required: 'Message is required' })}
+                  {...register('message', { required: 'Un mensaje es necesario' })}
                 ></textarea>
                 {errors.message && (
                   <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
@@ -144,7 +144,7 @@ const ContactForm = () => {
                   className="mt-4"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
                 </Button>
               </div>
             </div>

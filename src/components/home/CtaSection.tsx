@@ -8,7 +8,7 @@ const CtaSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="./assets/images/cta-background.jpg"
-          alt="Construction site"
+          alt="Construccion"
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-dark/90" />

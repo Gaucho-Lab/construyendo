@@ -74,7 +74,7 @@ const Seguros = () => {
                     to={`/services#${service.id}`} 
                     className="text-primary font-semibold hover:text-primary/80 transition-colors"
                   >
-                    Learn More →
+                    Saber Más →
                   </Link>
                 </div>
               </Card>

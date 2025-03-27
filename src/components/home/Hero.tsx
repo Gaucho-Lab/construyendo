@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-orange-500">
         <img
           src="./assets/images/hero-banner.jpg"
-          alt="Construction site with modern building"
+          alt="Construccion"
           className="w-full h-full object-cover opacity-70"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-r from-orange-500/80 to-orange-200/50" /> */}
@@ -24,7 +24,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-secondary font-semibold text-xl mb-4">
-              Excellence in Construction Since 1985
+              Excelencia en la construccion 1985
             </h4>
           </motion.div>
 
@@ -44,7 +44,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-lg text-gray-200 mb-8">
-              From residential homes to commercial complexes, we bring your construction dreams to life with quality craftsmanship, innovative design, and unmatched attention to detail.
+              Desde casas residenciales hasta complejos comerciales, hacemos realidad tus ideas de construccion con calidad, diseños innovadores y toda la atencion en los detalles.
             </p>
           </motion.div>
 
@@ -55,10 +55,10 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Button to="/services" size="lg">
-              Explore Our Services
+              Explora Nuestros Servicios
             </Button>
             <Button to="/contact" variant="outline" size="lg" className="text-white border-white hover:bg-white/20">
-              Get a Free Quote
+              Contactanos
             </Button>
           </motion.div>
         </div>

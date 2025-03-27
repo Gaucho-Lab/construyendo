@@ -53,8 +53,8 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
         {submitSuccess ? (
           <div className="text-center py-8">
             <div className="bg-green-100 text-green-800 p-4 rounded-lg mb-6">
-              <h3 className="text-xl font-bold mb-2">Application Submitted!</h3>
-              <p>Thank you for your loan application. Our team will review your information and contact you within 24-48 hours.</p>
+              <h3 className="text-xl font-bold mb-2">Aplicación enviada!</h3>
+              <p>Gracias port tu aplicación. Nuestro equipo revisará la información y se contactará con usted dentro de 24-48 horas.</p>
             </div>
             <Button
               onClick={() => {
@@ -62,25 +62,25 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
                 reset();
               }}
             >
-              Submit Another Application
+              Enviar Otra Aplicación
             </Button>
           </div>
         ) : (
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="md:col-span-2">
-                <h3 className="text-xl font-bold mb-6">Personal Information</h3>
+                <h3 className="text-xl font-bold mb-6">Información Personal</h3>
               </div>
               
               <div>
                 <label htmlFor="fullName" className="block text-gray-700 font-medium mb-2">
-                  Full Name*
+                  Nombre Completo*
                 </label>
                 <input
                   id="fullName"
                   type="text"
                   className={`form-input ${errors.fullName ? 'border-red-500' : ''}`}
-                  {...register('fullName', { required: 'Full name is required' })}
+                  {...register('fullName', { required: 'Nombre Completo es requerido' })}
                 />
                 {errors.fullName && (
                   <p className="text-red-500 text-sm mt-1">{errors.fullName.message}</p>
@@ -89,17 +89,17 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               
               <div>
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                  Email Address*
+                  Correo Electrónico*
                 </label>
                 <input
                   id="email"
                   type="email"
                   className={`form-input ${errors.email ? 'border-red-500' : ''}`}
                   {...register('email', {
-                    required: 'Email is required',
+                    required: 'Correo Electrónico es requerido',
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: 'Invalid email address',
+                      message: 'Correo Electrónico Invalido',
                     },
                   })}
                 />
@@ -110,13 +110,13 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               
               <div>
                 <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
-                  Phone Number*
+                  Número de Teléfono*
                 </label>
                 <input
                   id="phone"
                   type="tel"
                   className={`form-input ${errors.phone ? 'border-red-500' : ''}`}
-                  {...register('phone', { required: 'Phone number is required' })}
+                  {...register('phone', { required: 'El Número de Teléfono es requerido' })}
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
@@ -125,7 +125,7 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               
               <div>
                 <label htmlFor="employmentStatus" className="block text-gray-700 font-medium mb-2">
-                  Employment Status*
+                  Estado de Empleo*
                 </label>
                 <select
                   id="employmentStatus"
@@ -133,11 +133,12 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
                   {...register('employmentStatus', { required: 'Please select your employment status' })}
                 >
                   <option value="">Select</option>
-                  <option value="Employed Full-Time">Employed Full-Time</option>
-                  <option value="Employed Part-Time">Employed Part-Time</option>
-                  <option value="Self-Employed">Self-Employed</option>
-                  <option value="Retired">Retired</option>
-                  <option value="Other">Other</option>
+                  <option value="Employed Full-Time">Full-Time</option>
+                  <option value="Employed Part-Time">Part-Time</option>
+                  <option value="Self-Employed">Monotributista</option>
+                  <option value="Self-Employed">Responsable Inscripto</option>
+                  <option value="Retired">Retirado</option>
+                  <option value="Other">Otro</option>
                 </select>
                 {errors.employmentStatus && (
                   <p className="text-red-500 text-sm mt-1">{errors.employmentStatus.message}</p>
@@ -145,26 +146,26 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               </div>
               
               <div className="md:col-span-2">
-                <h3 className="text-xl font-bold mb-6 mt-4">Loan Details</h3>
+                <h3 className="text-xl font-bold mb-6 mt-4">Detalles del Préstamo</h3>
               </div>
               
               <div>
                 <label htmlFor="loanAmount" className="block text-gray-700 font-medium mb-2">
-                  Loan Amount ($)*
+                  Monto ($)*
                 </label>
                 <input
                   id="loanAmount"
                   type="number"
                   className={`form-input ${errors.loanAmount ? 'border-red-500' : ''}`}
                   {...register('loanAmount', {
-                    required: 'Loan amount is required',
+                    required: 'El Monto es requerido',
                     min: {
                       value: 5000,
-                      message: 'Minimum loan amount is $5,000',
+                      message: 'El Monto Mínimo es de $5,000',
                     },
                     max: {
                       value: 250000,
-                      message: 'Maximum loan amount is $250,000',
+                      message: 'El Monto Máximo es de $250,000',
                     },
                   })}
                 />
@@ -175,7 +176,7 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               
               <div>
                 <label htmlFor="purpose" className="block text-gray-700 font-medium mb-2">
-                  Loan Purpose*
+                  Finalidad del Dinero*
                 </label>
                 <select
                   id="purpose"
@@ -183,11 +184,11 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
                   {...register('purpose', { required: 'Please select a loan purpose' })}
                 >
                   <option value="">Select</option>
-                  <option value="Home Renovation">Home Renovation</option>
-                  <option value="New Construction">New Construction</option>
-                  <option value="Emergency Repairs">Emergency Repairs</option>
-                  <option value="Commercial Project">Commercial Project</option>
-                  <option value="Other">Other</option>
+                  <option value="Home Renovation">Renovación de hogar</option>
+                  <option value="New Construction">Nueva Construcción</option>
+                  <option value="Emergency Repairs">Reparaciones de Emergencia</option>
+                  <option value="Commercial Project">Proyecto Comercial</option>
+                  <option value="Other">Otro</option>
                 </select>
                 {errors.purpose && (
                   <p className="text-red-500 text-sm mt-1">{errors.purpose.message}</p>
@@ -196,17 +197,17 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               
               <div>
                 <label htmlFor="annualIncome" className="block text-gray-700 font-medium mb-2">
-                  Annual Income ($)*
+                  Sueldo Anual ($)*
                 </label>
                 <input
                   id="annualIncome"
                   type="number"
                   className={`form-input ${errors.annualIncome ? 'border-red-500' : ''}`}
                   {...register('annualIncome', {
-                    required: 'Annual income is required',
+                    required: 'El Sueldo Anual es requerido',
                     min: {
                       value: 0,
-                      message: 'Please enter a valid amount',
+                      message: 'Ingresar un monto válido',
                     },
                   })}
                 />
@@ -217,13 +218,13 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               
               <div className="md:col-span-2">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                  Additional Information
+                  Información Adicional
                 </label>
                 <textarea
                   id="message"
                   rows={4}
                   className="form-input"
-                  placeholder="Please provide any additional information that may help us process your application."
+                  placeholder="Por favor llenar con cualquier información adicional que nos pueda servir para procesar esta operación."
                   {...register('message')}
                 ></textarea>
               </div>
@@ -231,7 +232,7 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
               <div className="md:col-span-2">
                 <div className="bg-gray-50 p-4 rounded-lg mb-6">
                   <p className="text-sm text-gray-600">
-                    By submitting this form, you authorize us to perform a soft credit check, which will not affect your credit score. We will contact you to discuss your loan options and next steps.
+                    Al completar este formulariom autorizo a realizar un analisis crediticio. 
                   </p>
                 </div>
               </div>
@@ -244,7 +245,7 @@ const LoanForm = ({ initialLoanAmount }: LoanFormProps) => {
                   className="mt-4"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Submitting...' : 'Submit Loan Application'}
+                  {isSubmitting ? 'Enviando...' : 'Enviar Aplicación'}
                 </Button>
               </div>
             </div>
