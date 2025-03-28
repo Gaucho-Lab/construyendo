@@ -25,7 +25,7 @@ const LoansBanner = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h4 className="text-secondary font-semibold text-xl mt-4 mb-4">
+            <h4 className="text-secondary font-semibold text-xl mt-12 sm:mt-0 md:mt-0 lg:mt-0 mb-4">
               Soluciones Flexibles de Financiación
             </h4>
           </motion.div>
