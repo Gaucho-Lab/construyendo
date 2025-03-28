@@ -6,13 +6,13 @@ const Hero = () => {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 bg-orange-500">
+      <div className="absolute inset-0 ">
         <img
           src="./assets/images/hero-banner.jpg"
           alt="Construccion"
           className="w-full h-full object-cover opacity-70"
         />
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-orange-500/80 to-orange-200/50" /> */}
+        <div className="absolute inset-0 bg-orange-500/25" />
       </div>
 
       {/* Hero Content */}

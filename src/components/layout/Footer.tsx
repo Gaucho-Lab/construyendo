@@ -98,18 +98,20 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <a
-          href="https://api.whatsapp.com/send/?phone=543412125253&text=Hola%2C+me+comunico+desde+la+website%2C+quisiera+realizar+una+consulta.&type=phone_number&app_absent=0"
-          className="fixed bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:bg-green-600 transition-all hover:-translate-y-1 animate-bounce hover:animate-none"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="./assets/images/WhatsApp.svg"
-            alt="Contact us on WhatsApp"
-            className="w-8 h-8"
-          />
-        </a>
+        <div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=543412125253&text=Hola%2C+me+comunico+desde+la+website%2C+quisiera+realizar+una+consulta.&type=phone_number&app_absent=0"
+            className="fixed z-10 bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:bg-green-600 transition-all hover:-translate-y-1 animate-bounce hover:animate-none"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/images/WhatsApp.svg"
+              alt="Contact us on WhatsApp"
+              className="w-8 h-8"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );

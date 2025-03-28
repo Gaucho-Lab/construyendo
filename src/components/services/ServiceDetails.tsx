@@ -47,7 +47,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
               
               <AnimatedElement animation="slide-up" delay={0.3}>
                 <div className="border-t border-gray-300 pt-6">
-                  <h3 className="text-xl font-semibold mb-3">Key Features</h3>
+                  <h3 className="text-xl font-semibold mb-3">Características Clave</h3>
                 </div>
               </AnimatedElement>
             </div>
@@ -67,7 +67,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 }`}
                 onClick={() => handleTabChange('overview')}
               >
-                Overview
+                Descripción
               </button>
               <button
                 className={`py-3 px-5 font-semibold border-b-2 transition-colors ${
@@ -77,7 +77,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 }`}
                 onClick={() => handleTabChange('benefits')}
               >
-                Benefits
+                Beneficios
               </button>
               <button
                 className={`py-3 px-5 font-semibold border-b-2 transition-colors ${
@@ -87,7 +87,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 }`}
                 onClick={() => handleTabChange('process')}
               >
-                Our Process
+                Nuestro Proceso
               </button>
             </div>
           </div>
@@ -98,16 +98,16 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
         <div className="mb-8">
           {activeTab === 'overview' && (
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Service Overview</h3>
+              <h3 className="text-2xl font-semibold mb-4">Descripción del Servicio</h3>
               <p className="text-gray-700">
-                Our experienced team brings together the skills, knowledge, and commitment necessary to deliver exceptional results on every project. We work closely with our clients to understand their unique requirements and tailor our approach accordingly, ensuring that your specific needs are met with precision and care.
+                Nuestro equipo experimentado reune conocimientos, habilidades, y el compromiso necesario para entregar sus trabajos con resultados excepcionales. Trabajamos en conjunto con nuestro clientes para entender cada requerimientos y adaptarnos a ellos.
               </p>
             </div>
           )}
 
           {activeTab === 'benefits' && (
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Benefits of Our Approach</h3>
+              <h3 className="text-2xl font-semibold mb-4">Beneficios de nuestro enfoque</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 p-5 rounded-lg">
                   <h4 className="text-lg font-semibold mb-2">Expert Craftsmanship</h4>
@@ -139,7 +139,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
 
           {activeTab === 'process' && (
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Our Process</h3>
+              <h3 className="text-2xl font-semibold mb-4">Nuestro Proceso</h3>
               <div className="space-y-6">
                 <div className="flex">
                   <div className="mr-4">
@@ -148,9 +148,9 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">Initial Consultation</h4>
+                    <h4 className="text-lg font-semibold mb-2">Consulta Inicial</h4>
                     <p className="text-gray-700">
-                      We begin by understanding your vision, requirements, and constraints, establishing a solid foundation for the project.
+                      Comenzamos por entender tu visión, requerimientos, y limitaciones, estableciendo una fundación sólida para el proyecto.
                     </p>
                   </div>
                 </div>
@@ -161,9 +161,9 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">Planning & Design</h4>
+                    <h4 className="text-lg font-semibold mb-2">Planificación y Diseño</h4>
                     <p className="text-gray-700">
-                      Our team develops detailed plans and designs, considering functionality, aesthetics, and regulatory requirements.
+                      Nuestro equipo realiza planes y diseños detallamos, considerando la funcionalidad, estética, y requerimientos regulatorios.
                     </p>
                   </div>
                 </div>
@@ -174,9 +174,9 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">Project Execution</h4>
+                    <h4 className="text-lg font-semibold mb-2">Ejecución del Proyecto</h4>
                     <p className="text-gray-700">
-                      With careful coordination and skilled craftsmanship, we bring the plans to life, maintaining quality control throughout.
+                      Con coordinación y habilidades especiales, traemos los planes a la realidad, manteniendo controles de calidad durante el proceso.
                     </p>
                   </div>
                 </div>
@@ -187,9 +187,9 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">Final Inspection & Delivery</h4>
+                    <h4 className="text-lg font-semibold mb-2">Inspección Final y Entrega</h4>
                     <p className="text-gray-700">
-                      We conduct thorough inspections to ensure everything meets our high standards before handing over the completed project.
+                      Realizamos inspecciones para asegurar que todo se ajuste a las necesidades y requerimientos, antes de realizar la entrega final al cliente.
                     </p>
                   </div>
                 </div>
@@ -201,7 +201,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
 
       <AnimatedElement animation="fade-in" delay={0.6} className="flex justify-center mt-12">
         <Button to="/contact" size="lg">
-          Get a Quote for This Service
+          Obtener un Presupuesto
         </Button>
       </AnimatedElement>
     </div>
