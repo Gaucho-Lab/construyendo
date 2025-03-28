@@ -26,7 +26,7 @@ const ServicesBanner: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-secondary font-semibold text-xl mb-4">
-            viviendas en seco
+            Viviendas en seco
             </h4>
           </motion.div>
 

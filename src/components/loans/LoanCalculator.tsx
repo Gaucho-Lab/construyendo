@@ -61,7 +61,7 @@ const LoanCalculator = ({ onSubmit }: LoanCalculatorProps) => {
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 font-semibold mb-2">
-              Loan Amount: {formatCurrency(loanAmount)}
+              Monto del Préstamo: {formatCurrency(loanAmount)}
             </label>
             <input
               type="range"
@@ -99,7 +99,7 @@ const LoanCalculator = ({ onSubmit }: LoanCalculatorProps) => {
           
           <div className="mb-6">
             <label className="block text-gray-700 font-semibold mb-2">
-              Tiempo del Préstamo: {loanTerm / 12} {loanTerm === 12 ? 'Year' : 'Years'}
+              Tiempo del Préstamo: {loanTerm / 12} {loanTerm === 12 ? 'Año' : 'Años'}
             </label>
             <select
               value={loanTerm}

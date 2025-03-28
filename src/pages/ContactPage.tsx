@@ -28,19 +28,19 @@ const ContactPage = () => {
                   <ContactInfo
                     icon={FaPhone}
                     title="Teléfono"
-                    content="(555) 123-4567"
-                    link="tel:+15551234567"
+                    content="(341) 152 125253"
+                    link="tel:+3412125253"
                   />
                   <ContactInfo
                     icon={FaEnvelope}
                     title="Correo"
-                    content="info@constructionco.com"
-                    link="mailto:info@constructionco.com"
+                    content="info@contruyendo.org.ar"
+                    link="mailto:info@contruyendo.org.ar"
                   />
                   <ContactInfo
                     icon={FaClock}
                     title="Horarios"
-                    content="Mon-Fri: 8AM - 6PM"
+                    content="Lun-Vier: 8AM - 6PM"
                     secondLine="Sat: 9AM - 1PM"
                   />
                   <ContactInfo

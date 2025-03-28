@@ -72,19 +72,19 @@ export const services: Service[] = [
   {
     id: 'Viajes',
     title: 'Viajes',
-    description: 'Factories, warehouses, and industrial facilities built with precision and durability.',
+    description: 'Paquetes turísticos con destinos Nacionales e Internacionales',
     icon: FaPlane,
     },
   {
     id: 'Efectivo Ya!',
     title: 'Efectivo Ya!',
-    description: 'Comprehensive design services to bring your construction project to life.',
+    description: 'Retira dinero desde tu tarjeta de crédito y obtené el efectivo en el acto.',
     icon: FaCreditCard,
     },
   {
     id: 'Hogar & Electro',
     title: 'Hogar & Electro',
-    description: 'Comprehensive design services to bring your construction project to life.',
+    description: 'Equipa tu casa u oficina con nuestros productos y electrodomésticos.​',
     icon: FaLaptop,
     },
 ];

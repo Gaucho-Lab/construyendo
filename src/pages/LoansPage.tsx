@@ -32,14 +32,14 @@ const LoansPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionTitle
-                subtitle="Personal Loans"
-                title="Financing Solutions for Your Construction Projects"
-                description="We offer flexible financing options to help you bring your construction dreams to life. Our personal loan services are designed to make your project affordable and manageable."
+                subtitle="Préstamos Personales"
+                title="Soluciones Financieras Para Tus Proyectos de Construcción"
+                description="Ofrecemos opciones flexibles para ayudarte a hacer realidad tus ideas de construcción."
               />
               
               <AnimatedElement animation="slide-up" delay={0.2} className="mb-8">
                 <p className="text-gray-600">
-                  Whether you're planning a home renovation, a new construction project, or need funding for unexpected repairs, our loan programs provide competitive rates and personalized solutions tailored to your specific needs.
+                  Estas planeando un proyecto de renovación de tu hogar, reparación o una nueva construcción? Nuestro programa de préstamos ofrece intereses competitivos y soluciones personalizadas hechas para tus necesidades específicas.
                 </p>
               </AnimatedElement>
               
@@ -47,27 +47,27 @@ const LoansPage = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-start">
                     <FaCheckCircle className="text-secondary mt-1 mr-2" />
-                    <span>Competitive interest rates</span>
+                    <span>Tasas de Interés Competitivas</span>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-secondary mt-1 mr-2" />
-                    <span>Fast approval process</span>
+                    <span>Proceso de Aprobación Rápido</span>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-secondary mt-1 mr-2" />
-                    <span>Flexible repayment terms</span>
+                    <span>Términos de Pago Flexibles</span>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-secondary mt-1 mr-2" />
-                    <span>No prepayment penalties</span>
+                    <span>Sin Penalidades de Cancelación</span>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-secondary mt-1 mr-2" />
-                    <span>Personalized service</span>
+                    <span>Servicio Personalizado</span>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-secondary mt-1 mr-2" />
-                    <span>Expert financial guidance</span>
+                    <span>Equipo de Expertos Preparados Para Ayudarte</span>
                   </div>
                 </div>
               </AnimatedElement>
@@ -77,9 +77,9 @@ const LoansPage = () => {
                   <div className="flex items-start">
                     <FaInfoCircle className="text-primary mt-1 mr-3" />
                     <div>
-                      <p className="font-semibold">Loan amounts from $5,000 to $250,000</p>
+                      <p className="font-semibold">Montos que van desde $5,000 a $250,000</p>
                       <p className="text-sm text-gray-600">
-                        Terms from 12 to 120 months, subject to approval and creditworthiness.
+                        Plazos de 12 a 120 meses, sujeto a aprobación y historial crediticio.
                       </p>
                     </div>
                   </div>
@@ -98,9 +98,9 @@ const LoansPage = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <SectionTitle
-              subtitle="Loan Options"
-              title="Choose the Right Financing Solution"
-              description="We offer several loan products designed to meet different construction and renovation needs."
+              subtitle="Opciones de Préstamos"
+              title="Elegí tu Solución Financiera"
+              description="Ofrecemos distintos productos para tus distintas necesidades de construcción on renovación."
               center
             />
             
@@ -111,22 +111,22 @@ const LoansPage = () => {
                     <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                       <FaHome className="text-2xl text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">Home Renovation</h3>
+                    <h3 className="text-xl font-bold mb-3">Renovaciones de Hogar</h3>
                     <p className="text-gray-600 mb-4">
-                      Perfect for kitchen remodels, bathroom updates, and other home improvement projects.
+                      Remodelaciones de cocina, baños, y otros proyectos.
                     </p>
                     <ul className="space-y-2 mb-4">
                       <li className="flex items-start">
                         <FaPercent className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Rates from 5.99% APR</span>
+                        <span className="text-gray-600 text-sm">Intereses desde 5.99% APR</span>
                       </li>
                       <li className="flex items-start">
                         <FaFileAlt className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Terms up to 7 years</span>
+                        <span className="text-gray-600 text-sm">Plazos de hasta 7 años</span>
                       </li>
                     </ul>
                     <Button to="#loan-form" variant="outline" fullWidth>
-                      Apply Now
+                      Aplicar ahora
                     </Button>
                   </div>
                 </Card>
@@ -138,22 +138,22 @@ const LoansPage = () => {
                     <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                       <FaBuilding className="text-2xl text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">New Construction</h3>
+                    <h3 className="text-xl font-bold mb-3">Nueva Construcción</h3>
                     <p className="text-gray-600 mb-4">
-                      Finance your dream home or commercial building project from the ground up.
+                      Financiá la casa de tus sueños o estructura comercial desde cero.
                     </p>
                     <ul className="space-y-2 mb-4">
                       <li className="flex items-start">
                         <FaPercent className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Rates from 6.49% APR</span>
+                        <span className="text-gray-600 text-sm">Intereses desde 6.49% APR</span>
                       </li>
                       <li className="flex items-start">
                         <FaFileAlt className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Terms up to 10 years</span>
+                        <span className="text-gray-600 text-sm">Plazos hasta 10 años</span>
                       </li>
                     </ul>
                     <Button to="#loan-form" variant="outline" fullWidth>
-                      Apply Now
+                      Aplicar ahora
                     </Button>
                   </div>
                 </Card>
@@ -165,22 +165,22 @@ const LoansPage = () => {
                     <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                       <FaTools className="text-2xl text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">Emergency Repairs</h3>
+                    <h3 className="text-xl font-bold mb-3">Reparaciones de Emergencia</h3>
                     <p className="text-gray-600 mb-4">
-                      Quick funding for unexpected repairs like roof leaks, HVAC failures, or structural issues.
+                      Financiación rápida para reparaciones inesperadas de techos, fallas, o problemas estructurales.
                     </p>
                     <ul className="space-y-2 mb-4">
                       <li className="flex items-start">
                         <FaPercent className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Rates from 7.99% APR</span>
+                        <span className="text-gray-600 text-sm">Intereses desde 7.99% APR</span>
                       </li>
                       <li className="flex items-start">
                         <FaFileAlt className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Fast approval in 48 hours</span>
+                        <span className="text-gray-600 text-sm">Aprobación rápida</span>
                       </li>
                     </ul>
                     <Button to="#loan-form" variant="outline" fullWidth>
-                      Apply Now
+                      Aplicar ahora
                     </Button>
                   </div>
                 </Card>
@@ -194,9 +194,9 @@ const LoansPage = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <SectionTitle
-              subtitle="Apply Now"
-              title="Request a Personal Loan"
-              description="Fill out the form below to start your loan application process. Our team will review your information and contact you within 24-48 hours."
+              subtitle="Aplicar Ahora"
+              title="Solicitar un Préstamo Personal"
+              description="Completá el formulario de abajo para empexar el proceso de aplicación. Nuestro equipo se pondrá en contacto dentro de 24-48 horas."
               center
             />
             

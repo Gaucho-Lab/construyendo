@@ -24,7 +24,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-secondary font-semibold text-xl mb-4">
-              Excelencia en la construccion 1985
+              Excelencia en la construcción 1985
             </h4>
           </motion.div>
 
@@ -43,8 +43,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <p className="text-lg text-gray-200 mb-8">
-              Desde casas residenciales hasta complejos comerciales, hacemos realidad tus ideas de construccion con calidad, diseños innovadores y toda la atencion en los detalles.
+            <p className="text-lg text-dark mb-8">
+              Desde casas residenciales hasta complejos comerciales, hacemos realidad tus ideas de construcción con calidad, diseños innovadores y toda la atencion en los detalles.
             </p>
           </motion.div>
 
@@ -72,7 +72,7 @@ const Hero = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <div className="flex flex-col items-center">
-          <span className="text-white text-sm mb-2">Scroll Down</span>
+          <span className="text-white text-sm mb-2">Seguir bajando</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
