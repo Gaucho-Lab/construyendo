@@ -48,7 +48,7 @@ const Turismo = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-dark bg-opacity-50"></div>
       
       {/* Content Container */}
       <div className="relative container mx-auto px-6 z-10">
