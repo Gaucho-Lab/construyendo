@@ -21,10 +21,10 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: 'Home', path: '/construyendo' },
-    { name: 'Servicios', path: '/services' },
-    { name: 'Préstamos Personales', path: '/loans' },
-    { name: 'Contacto', path: '/contact' },
+    { name: 'Inicio', path: '/construyendo' },
+    { name: 'Servicios', path: '/servicios' },
+    { name: 'Préstamos Personales', path: '/prestamos' },
+    { name: 'Contacto', path: '/contacto' },
   ];
 
   const navbarVariants = {

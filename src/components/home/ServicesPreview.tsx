@@ -10,7 +10,7 @@ const ServicesPreview = () => {
   const previewServices = services.slice(0, 3);
 
   return (
-    <section className="section bg-primary/10">
+    <section className="section bg-gray-50">
       <div className="container-custom">
         <SectionTitle
           subtitle=""
