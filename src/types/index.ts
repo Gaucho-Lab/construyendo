@@ -9,10 +9,13 @@ export interface Project {
   }
   
   export interface LoanFormData {
-    fullName: string;
+    name: string;
+    lastName: string;
     email: string;
     phone: string;
     loanAmount: number;
+    cuit: number;
+    dob: Date;
     purpose: string;
     employmentStatus: string;
     annualIncome: number;

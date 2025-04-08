@@ -1,33 +1,33 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import LoansBanner from '../components/loans/LoansBanner';
-import LoanCalculator from '../components/loans/LoanCalculator';
+// import LoanCalculator from '../components/loans/LoanCalculator';
 import LoanForm from '../components/loans/LoanForm';
-import SectionTitle from '../components/ui/SectionTitle';
+// import SectionTitle from '../components/ui/SectionTitle';
 import AnimatedElement from '../components/ui/AnimatedElement';
 import Card from '../components/ui/Card';
-import { FaCheckCircle, FaInfoCircle, FaPercent, FaFileAlt, FaHome, FaTools, FaBuilding } from 'react-icons/fa';
-import Button from '../components/ui/Button';
+// import { FaPercent, FaFileAlt, FaHome, FaTools, FaBuilding } from 'react-icons/fa';
+// import Button from '../components/ui/Button';
 
 const LoansPage = () => {
-  const [calculatedAmount, setCalculatedAmount] = useState<number | null>(null);
+  // const [calculatedAmount, setCalculatedAmount] = useState<number | null>(null);
   
-  const handleCalculatorSubmit = (amount: number) => {
-    setCalculatedAmount(amount);
+  // const handleCalculatorSubmit = (amount: number) => {
+  //   setCalculatedAmount(amount);
     
-    // Scroll to the loan form
-    setTimeout(() => {
-      const element = document.getElementById('loan-form');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
-  };
+  //   // Scroll to the loan form
+  //   setTimeout(() => {
+  //     const element = document.getElementById('loan-form');
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   }, 100);
+  // };
 
   return (
     <>
       <LoansBanner />
       
-      <section className="section bg-white">
+      {/* <section className="section bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -92,97 +92,81 @@ const LoansPage = () => {
             </AnimatedElement>
           </div>
         </div>
-      </section>
+      </section> */}
       
       <section className="section bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <SectionTitle
+            {/* <SectionTitle
               subtitle="Opciones de Préstamos"
               title="Elegí tu Solución Financiera"
               description="Ofrecemos distintos productos para tus distintas necesidades de construcción on renovación."
               center
-            />
+            /> */}
+            <div className="w-3/4 mx-auto border-t-4 border-primary my-2"></div>
+            <h2 className='text-4xl text-primary text-center'>CÓMO OBTENER TU PRÉSTAMO PASO A PASO</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <AnimatedElement animation="slide-up" delay={0.1}>
-                <Card elevated className="h-full">
-                  <div className="p-6">
-                    <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                      <FaHome className="text-2xl text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3">Renovaciones de Hogar</h3>
-                    <p className="text-gray-600 mb-4">
-                      Remodelaciones de cocina, baños, y otros proyectos.
+              <AnimatedElement animation="slide-up" className='p-2' delay={0.1}>
+              <Card elevated className="h-full">
+                    <p className="text-primary mt-4 text-center">
+                      - Paso 1 -
                     </p>
-                    <ul className="space-y-2 mb-4">
-                      <li className="flex items-start">
-                        <FaPercent className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Intereses desde 5.99% APR</span>
-                      </li>
-                      <li className="flex items-start">
-                        <FaFileAlt className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Plazos de hasta 7 años</span>
-                      </li>
-                    </ul>
-                    <Button to="#loan-form" variant="outline" fullWidth>
-                      Aplicar ahora
-                    </Button>
-                  </div>
+                    <div className='flex justify-center'>
+                      <img
+                        src="./assets/images/PASO-1.png"
+                        alt="Contact us on WhatsApp"
+                        className="w-32 mt-4"
+                      />
+                    </div>
+                    <div className='px-4'>
+                      <h3 className="text-xl font-bold mt-4 text-center">LLENÁ EL FORMULARIO</h3>
+                      <p className="text-primary my-2 text-center">
+                        Realizá una solicitud online llenando el formulario debajo. 
+                      </p>
+                    </div>
                 </Card>
               </AnimatedElement>
               
-              <AnimatedElement animation="slide-up" delay={0.2}>
+              <AnimatedElement animation="slide-up" className='p-2' delay={0.2}>
                 <Card elevated className="h-full">
-                  <div className="p-6">
-                    <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                      <FaBuilding className="text-2xl text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3">Nueva Construcción</h3>
-                    <p className="text-gray-600 mb-4">
-                      Financiá la casa de tus sueños o estructura comercial desde cero.
+                    <p className="text-primary mt-4 text-center">
+                      - Paso 2 -
                     </p>
-                    <ul className="space-y-2 mb-4">
-                      <li className="flex items-start">
-                        <FaPercent className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Intereses desde 6.49% APR</span>
-                      </li>
-                      <li className="flex items-start">
-                        <FaFileAlt className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Plazos hasta 10 años</span>
-                      </li>
-                    </ul>
-                    <Button to="#loan-form" variant="outline" fullWidth>
-                      Aplicar ahora
-                    </Button>
-                  </div>
+                    <div className='flex justify-center'>
+                      <img
+                        src="./assets/images/PASO-2.png"
+                        alt="Contact us on WhatsApp"
+                        className="w-32 mt-4"
+                      />
+                    </div>
+                    <div className='px-4'>
+                      <h3 className="text-xl font-bold mt-4 text-center my-auto">RECIBÍ TU RESPUESTA</h3>
+                      <p className="text-primary my-4 text-center">
+                      Recibirás nuestra confirmación de aprobación o rechazo vía teléfono o email. 
+                      </p>
+                    </div>
                 </Card>
               </AnimatedElement>
               
-              <AnimatedElement animation="slide-up" delay={0.3}>
-                <Card elevated className="h-full">
-                  <div className="p-6">
-                    <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                      <FaTools className="text-2xl text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3">Reparaciones de Emergencia</h3>
-                    <p className="text-gray-600 mb-4">
-                      Financiación rápida para reparaciones inesperadas de techos, fallas, o problemas estructurales.
+              <AnimatedElement animation="slide-up" className='p-2' delay={0.3}>
+              <Card elevated className="h-full">
+                    <p className="text-primary mt-4 text-center">
+                      - Paso 3 -
                     </p>
-                    <ul className="space-y-2 mb-4">
-                      <li className="flex items-start">
-                        <FaPercent className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Intereses desde 7.99% APR</span>
-                      </li>
-                      <li className="flex items-start">
-                        <FaFileAlt className="text-secondary mt-1 mr-2 text-sm" />
-                        <span className="text-gray-600 text-sm">Aprobación rápida</span>
-                      </li>
-                    </ul>
-                    <Button to="#loan-form" variant="outline" fullWidth>
-                      Aplicar ahora
-                    </Button>
-                  </div>
+                    <div className='flex justify-center'>
+                      <img
+                        src="./assets/images/PASO-3.png"
+                        alt="Contact us on WhatsApp"
+                        className="w-32 mt-4"
+                      />
+                    </div>
+                    <div className='px-4'>
+                      <h3 className="text-xl font-bold mt-4  text-center my-auto">OBTENÉ TU DINERO</h3>
+                      <p className="text-primary my-4 text-center">
+                      Aprobada la operación y trámites administrativos, podrás retirar tu dinero. 
+                      </p>
+                    </div>
                 </Card>
               </AnimatedElement>
             </div>
@@ -190,18 +174,14 @@ const LoansPage = () => {
         </div>
       </section>
       
-      <section id="loan-form" className="section bg-white">
+      <section id="loan-form" className="section bg-light">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <SectionTitle
-              subtitle="Aplicar Ahora"
-              title="Solicitar un Préstamo Personal"
-              description="Completá el formulario de abajo para empexar el proceso de aplicación. Nuestro equipo se pondrá en contacto dentro de 24-48 horas."
-              center
-            />
+            <div className="w-3/4 mx-auto border-t-4 border-primary my-2"></div>
+            <h2 className='text-4xl text-primary text-center'>SOLICITÁ TU PRÉSTAMO PERSONAL AQUÍ</h2>
             
             <AnimatedElement animation="fade-in" delay={0.2} className="mt-12">
-              <LoanForm initialLoanAmount={calculatedAmount} />
+              <LoanForm initialLoanAmount={0} />
             </AnimatedElement>
           </div>
         </div>

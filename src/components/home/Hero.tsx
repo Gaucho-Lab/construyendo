@@ -29,7 +29,7 @@ const Hero = () => {
           animate={{ scale: 1, opacity: 0.7 }}
           transition={{ duration: 1.5 }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/60 to-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/50 to-dark/30" />
       </div>
 
       <div className="container-custom z-10 relative">
@@ -88,7 +88,7 @@ const Hero = () => {
                   key={index}
                   animation="fade-in"
                   delay={0.4 + 0.2 * index}
-                  className="text-center bg-dark/70 rounded-lg p-3 backdrop-blur-sm border border-primary/20"
+                  className="text-center bg-dark/70 rounded-lg p-3 backdrop-blur-sm"
                 >
                   <div className="flex justify-center mb-2">
                     <item.icon className="text-2xl text-primary" />
@@ -102,7 +102,7 @@ const Hero = () => {
 
           {/* Content Right */}
           <div className="order-1 lg:order-2 lg:col-span-7 z-10">
-            <AnimatedElement animation="slide-up" delay={0.4} className="bg-white/10 backdrop-blur-sm p-4 md:p-6 rounded-lg border border-white/20">
+            <AnimatedElement animation="slide-up" delay={0.4} className="p-4 md:p-6 rounded-lg border border-white/20">
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

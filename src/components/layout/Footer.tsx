@@ -17,10 +17,7 @@ const Footer = () => {
                 className="h-12 mb-4"
               />
             </Link>
-            <p className="text-gray-300 mb-6">
-              Construyendo junto a vos desde 1985. 
-              Comprometidos con la excelencia y la satisfacción del cliente.
-            </p>
+            
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/construyendomutual/" className="text-gray-300 hover:text-secondary transition-colors" aria-label="Facebook">
                 <FaFacebookF className="text-xl" />
@@ -86,6 +83,9 @@ const Footer = () => {
         <hr className="border-gray-700 my-8" />
 
         <div className="flex flex-col md:flex-row items-center justify-between">
+          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              Web by GauchoLab
+          </p>
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} Construyendo. All rights reserved.
           </p>

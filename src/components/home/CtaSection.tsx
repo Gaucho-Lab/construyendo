@@ -6,12 +6,7 @@ const CtaSection = () => {
     <section className="relative py-20 bg-gray-900 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="./assets/images/cta-background.jpg"
-          alt="Construccion"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-dark/90" />
+        <div className="absolute inset-0 bg-amber-800/60" />
       </div>
 
       <div className="container-custom relative z-10">
