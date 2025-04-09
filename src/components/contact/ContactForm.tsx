@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   return (
     <Card elevated>
-      <div className="p-6">
+      <div className="p-6 bg-secondary/10">
         <h3 className="text-2xl font-bold mb-6">Envianos un mensaje</h3>
         
         {submitSuccess ? (

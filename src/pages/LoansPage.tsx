@@ -108,7 +108,7 @@ const LoansPage = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               <AnimatedElement animation="slide-up" className='p-2' delay={0.1}>
-              <Card elevated className="h-full">
+              <Card elevated className="h-full bg-secondary/10">
                     <p className="text-primary mt-4 text-center">
                       - Paso 1 -
                     </p>
@@ -129,7 +129,7 @@ const LoansPage = () => {
               </AnimatedElement>
               
               <AnimatedElement animation="slide-up" className='p-2' delay={0.2}>
-                <Card elevated className="h-full">
+                <Card elevated className="h-full bg-secondary/10">
                     <p className="text-primary mt-4 text-center">
                       - Paso 2 -
                     </p>
@@ -150,7 +150,7 @@ const LoansPage = () => {
               </AnimatedElement>
               
               <AnimatedElement animation="slide-up" className='p-2' delay={0.3}>
-              <Card elevated className="h-full">
+              <Card elevated className="h-full bg-secondary/10">
                     <p className="text-primary mt-4 text-center">
                       - Paso 3 -
                     </p>
