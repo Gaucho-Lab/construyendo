@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import AnimatedElement from '../ui/AnimatedElement';
 import Card from '../ui/Card';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { seguros } from '@/data/services';
 
 const Seguros = () => {
@@ -70,12 +70,12 @@ const Seguros = () => {
                     <service.icon className="text-7xl text-orange-900" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">{service.title}</h3>                  
-                  <Link 
+                  {/* <Link 
                     to={`/services#${service.id}`} 
                     className="text-primary font-semibold hover:text-primary/80 transition-colors"
                   >
                     Saber Más →
-                  </Link>
+                  </Link> */}
                 </div>
               </Card>
             </AnimatedElement>
