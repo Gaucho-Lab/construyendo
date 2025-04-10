@@ -11,7 +11,7 @@ const ContactPage = () => {
       <ContactBanner />
       
       <section className="section bg-light">
-        <div className="container-custom">
+        <div className="container-custom max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <AnimatedElement animation="fade-in">
@@ -143,7 +143,7 @@ const ContactPage = () => {
             />
           </AnimatedElement>
 
-          <div className="w-full border-2 mt-6">
+          <div className="w-full border-2 mt-6 max-w-7xl">
             <iframe width="100%" height="600"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rioja%201150%20-%20Local%202+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
             </iframe>
           </div>
