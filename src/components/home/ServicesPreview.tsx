@@ -33,12 +33,12 @@ const ServicesPreview = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6 flex-grow">{service.description}</p>
-                  <Link 
+                  {/* <Link 
                     to={`/services#${service.id}`} 
                     className="text-primary font-semibold hover:text-primary/80 transition-colors"
                   >
                     Saber Más →
-                  </Link>
+                  </Link> */}
                 </div>
               </Card>
             </AnimatedElement>

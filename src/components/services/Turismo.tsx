@@ -51,7 +51,7 @@ const Turismo = () => {
       <div className="absolute inset-0 bg-dark bg-opacity-50"></div>
       
       {/* Content Container */}
-      <div className="relative container mx-auto px-6 z-10">
+      <div className="relative container mx-auto px-6 z-10 max-w-7xl">
         {/* Title */}
         <h2 className="text-2xl md:text-5xl font-bold text-white text-center mb-16">
           TURISMO CONSTRUYENDO

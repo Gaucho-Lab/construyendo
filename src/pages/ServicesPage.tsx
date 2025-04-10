@@ -51,7 +51,7 @@ const ServicesPage = () => {
       <ServicesBanner />
       
       <section className="section bg-light">
-        <div className="container-custom">
+        <div className="container-custom max-w-7xl">
           <SectionTitle
             title="Nuestros Servicios"
             description="Ofrecemos servicios para la construccion de alta calidad, para obras residenciales, comerciales e industriales."
