@@ -1,7 +1,6 @@
 import ContactBanner from '../components/contact/ContactBanner';
 import ContactForm from '../components/contact/ContactForm';
 import ContactInfo from '../components/contact/ContactInfo';
-// import MapLocation from '../components/contact/MapLocation';
 import SectionTitle from '../components/ui/SectionTitle';
 import AnimatedElement from '../components/ui/AnimatedElement';
 import { FaPhone, FaEnvelope, FaClock, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
@@ -143,10 +142,11 @@ const ContactPage = () => {
               center
             />
           </AnimatedElement>
-          
-          {/* <AnimatedElement animation="fade-in" delay={0.2} className="mt-10">
-            <MapLocation />
-          </AnimatedElement> */}
+
+          <div className="w-full border-2 mt-6">
+            <iframe width="100%" height="600"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rioja%201150%20-%20Local%202+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+          </div>
         </div>
       </section>
     </>
