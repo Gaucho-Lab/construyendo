@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Inicio', path: '/construyendo' },
-    // { name: 'Novedades', path: '/novedades' },
+    { name: 'Asociate', path: '/asociate' },
     { name: 'Servicios', path: '/servicios' },
     // { name: 'Préstamos Personales', path: '/prestamos' },
     { name: 'Contacto', path: '/contacto' },

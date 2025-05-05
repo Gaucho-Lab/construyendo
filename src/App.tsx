@@ -5,6 +5,7 @@ import ServicesPage from './pages/ServicesPage';
 import LoansPage from './pages/LoansPage';
 import ContactPage from './pages/ContactPage';
 import ScrollToTop from './components/ui/ScrollToTop';
+import AsociatePage from './pages/AsociatePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/construyendo" element={<HomePage />} />
           <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/asociate" element={<AsociatePage />} />
           <Route path="/prestamos" element={<LoansPage />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
