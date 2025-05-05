@@ -20,20 +20,19 @@ const Hero = () => {
   return (
     <section className="relative min-h-[100svh] md:h-screen flex items-center text-lg py-16 md:py-0">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <motion.img
-          src="./assets/images/hero-banner-2.jpg"
-          alt="Construccion"
-          className="w-full h-full object-cover"
-          initial={{ scale: 1.05, opacity: 0.8 }}
-          animate={{ scale: 1, opacity: 0.7 }}
-          transition={{ duration: 1.5 }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/50 to-dark/30" />
-      </div>
+        <video 
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="./videos/hero3.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/80 to-dark/50" />
 
       <div className="container-custom z-10 relative">
-        <div className="grid justify-items-center mb-6 md:mb-8">
+        {/* <div className="grid justify-items-center mb-6 md:mb-8">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,7 +52,7 @@ const Hero = () => {
           >
             Asociación Mutual de la Construcción
           </motion.p>
-        </div>
+        </div> */}
 
         {/* Mobile Headline - Visible only on mobile */}
         <div className="block lg:hidden mb-4">
@@ -91,7 +90,7 @@ const Hero = () => {
                   className="text-center bg-dark/70 rounded-lg p-3 backdrop-blur-sm"
                 >
                   <div className="flex justify-center mb-2">
-                    <item.icon className="text-2xl text-primary" />
+                    <item.icon className="text-2xl text-secondary" />
                   </div>
                   <h4 className="text-xl font-bold text-white">{item.value}</h4>
                   <p className="text-white/80 text-xs">{item.label}</p>
@@ -109,7 +108,7 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-white text-base md:text-lg mb-4"
               >
-                <span className="text-primary font-bold underline">Construyendo – Asociación Mutual</span> es una entidad civil constituida por personas inspiradas en la ayuda mutua y el bienestar de nuestros afiliados. Por eso ponemos a su alcance múltiples servicios y prestaciones a fin de cubrir todos los aspectos que hacen a su seguridad y satisfacción y la de su familia.
+                <span className="text-secondary font-bold underline">Construyendo – Asociación Mutual</span> es una entidad civil constituida por personas inspiradas en la ayuda mutua y el bienestar de nuestros afiliados. Por eso ponemos a su alcance múltiples servicios y prestaciones a fin de cubrir todos los aspectos que hacen a su seguridad y el bienestar de la familia.
               </motion.p>
               
               <motion.p

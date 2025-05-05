@@ -1,6 +1,7 @@
 import Card from '../ui/Card';
 import { Service } from '../../data/services';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   service: Service;
@@ -39,14 +40,24 @@ const ServiceCard = ({ service, isSelected, onSelect }: ServiceCardProps) => {
           <p className="text-gray-600">{service.description}</p>
         </div>
         
-        <motion.button
+        {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => onSelect(service.id)}
           className="w-full py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-all font-semibold"
         >
           {isSelected ? 'Selected' : 'Learn More'}
-        </motion.button>
+        </motion.button> */}
+
+        <Link to="/prestamos">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-all font-semibold"
+          >
+            Learn More
+          </motion.button>
+        </Link>
       </div>
     </Card>
   );

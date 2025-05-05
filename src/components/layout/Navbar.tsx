@@ -22,8 +22,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Inicio', path: '/construyendo' },
+    // { name: 'Novedades', path: '/novedades' },
     { name: 'Servicios', path: '/servicios' },
-    { name: 'Préstamos Personales', path: '/prestamos' },
+    // { name: 'Préstamos Personales', path: '/prestamos' },
     { name: 'Contacto', path: '/contacto' },
   ];
 
@@ -57,7 +58,7 @@ const Navbar = () => {
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="container-custom">
+      <div className="container-custom max-w-7xl">
         <motion.nav 
           className="flex items-center justify-between"
           initial="hidden"
@@ -68,8 +69,9 @@ const Navbar = () => {
             <img 
               src="./assets/logos/logo-amc.png" 
               alt="Construction Company" 
-              className="h-10 md:h-20"
+              className="h-10 md:h-20 bg-light/30"
             />
+            
           </Link>
 
           {/* Desktop Menu */}
@@ -80,7 +82,7 @@ const Navbar = () => {
                   to={link.path}
                   className={({ isActive }) => 
                     isActive 
-                      ? 'text-primary font-semibold' 
+                      ? 'text-secondary font-semibold' 
                       : `${isScrolled ? 'text-dark' : 'text-white'} hover:text-primary transition-colors`
                   }
                 >

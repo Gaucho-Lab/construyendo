@@ -18,7 +18,7 @@ const ContactBanner = () => {
       </div>
 
       {/* Banner Content */}
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 mt-8">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const ServicesBanner: React.FC = () => {
+const ServicesBanner = () => {
   return (
     <section className="relative h-80 md:h-96 flex items-center">
       {/* Background Image with Overlay */}
@@ -18,7 +18,7 @@ const ServicesBanner: React.FC = () => {
       </div>
 
       {/* Banner Content */}
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 mt-12">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
