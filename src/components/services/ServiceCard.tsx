@@ -9,7 +9,7 @@ interface ServiceCardProps {
   onSelect: (serviceId: string) => void;
 }
 
-const ServiceCard = ({ service, isSelected, onSelect }: ServiceCardProps) => {
+const ServiceCard = ({ service, isSelected }: ServiceCardProps) => {
   return (
     <Card 
       hoverable 
