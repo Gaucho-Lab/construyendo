@@ -109,7 +109,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
             </div>
           )}
 
-          {activeTab === 'benefits' && (
+          {/* {activeTab === 'benefits' && (
             <div>
               <h3 className="text-2xl font-semibold mb-4">Beneficios de nuestro enfoque</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -139,9 +139,9 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
-          {activeTab === 'process' && (
+          {/* {activeTab === 'process' && (
             <div>
               <h3 className="text-2xl font-semibold mb-4">Nuestro Proceso</h3>
               <div className="space-y-6">
@@ -199,12 +199,12 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </AnimatedElement>
 
       <AnimatedElement animation="fade-in" delay={0.6} className="flex justify-center mt-12">
-        <Button to="/contact" size="lg">
+        <Button to="/contacto" size="lg">
           Obtener un Presupuesto
         </Button>
       </AnimatedElement>
