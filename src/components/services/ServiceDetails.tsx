@@ -27,6 +27,10 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 transition={{ duration: 0.5 }}
               >
                 <div className="rounded-lg overflow-hidden shadow-lg">
+                <img
+                src={`./assets/images/${service.imgs}.jpg`}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
                 </div>
               </motion.div>
             </div>
@@ -69,7 +73,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
               >
                 Descripción
               </button>
-              <button
+              {/* <button
                 className={`py-3 px-5 font-semibold border-b-2 transition-colors ${
                   activeTab === 'benefits'
                     ? 'border-primary text-primary'
@@ -88,7 +92,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
                 onClick={() => handleTabChange('process')}
               >
                 Nuestro Proceso
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -100,7 +104,7 @@ const ServiceDetails = ({ service }: ServiceDetailsProps) => {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Descripción del Servicio</h3>
               <p className="text-gray-700">
-                Nuestro equipo experimentado reune conocimientos, habilidades, y el compromiso necesario para entregar sus trabajos con resultados excepcionales. Trabajamos en conjunto con nuestro clientes para entender cada requerimientos y adaptarnos a ellos.
+                {service.description2}
               </p>
             </div>
           )}

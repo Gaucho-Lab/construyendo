@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 interface ServiceCardProps {
   service: Service;
   isSelected: boolean;
+  route: string;
   onSelect: (serviceId: string) => void;
 }
 
-const ServiceCard = ({ service, isSelected }: ServiceCardProps) => {
+const ServiceCard = ({ service, isSelected, route }: ServiceCardProps) => {
   return (
     <Card 
       hoverable 
@@ -49,7 +50,7 @@ const ServiceCard = ({ service, isSelected }: ServiceCardProps) => {
           {isSelected ? 'Selected' : 'Learn More'}
         </motion.button> */}
 
-        <Link to="/prestamos">
+        <Link to={route}>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

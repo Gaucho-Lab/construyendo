@@ -69,6 +69,7 @@ const ServicesPage = () => {
                   service={service}
                   isSelected={selectedService === service.id}
                   onSelect={handleServiceSelect}
+                  route={service.route}
                 />
               </AnimatedElement>
             ))}
