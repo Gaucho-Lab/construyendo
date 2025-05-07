@@ -46,7 +46,7 @@ const ServicesPreview = () => {
         </div>
 
         <AnimatedElement animation="fade-in" delay={0.4} className="flex justify-center mt-12">
-          <Button to="/services" size="lg">
+          <Button to="/servicios" size="lg">
             Ver Todos Los Servicios
           </Button>
         </AnimatedElement>

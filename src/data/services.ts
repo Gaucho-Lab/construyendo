@@ -116,7 +116,7 @@ export const services: Service[] = [
     description: 'Protección completa para tu patrimonio, familia y futuro.',
     description2: 'Asegurá lo que más te importa con nuestros planes de seguros patrimoniales, de vida y ahorro. Protegemos tu hogar, vehículos y bienes personales contra diferentes riesgos, mientras te ofrecemos opciones para asegurar el bienestar financiero de tu familia con seguros de vida y planes de ahorro programado. Trabajamos con las principales compañías aseguradoras para brindarte la mejor cobertura con primas accesibles y atención personalizada en caso de siniestros.',
     icon: FaShieldAlt,
-    imgs: 'seguros',
+    imgs: 'seguros-patrimoniales',
     route: 'seguros-patrimoniales'
   }
 ];
