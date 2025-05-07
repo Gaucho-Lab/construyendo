@@ -2,14 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { services } from '@/data/services'; // Importamos los servicios
+import { services } from '@/data/services';
+import './Navbar.css'; // Asegúrate de crear este archivo CSS
 
 const Navbar2 = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  // Especificamos el tipo correcto para la referencia
-  const servicesRef = useRef<HTMLLIElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,8 +23,7 @@ const Navbar2 = () => {
   useEffect(() => {
     // Cerrar el menú de servicios cuando se hace clic fuera
     const handleClickOutside = (event: MouseEvent) => {
-      // Aseguramos que tanto event.target como servicesRef.current no sean null
-      if (servicesRef.current && event.target instanceof Node && !servicesRef.current.contains(event.target)) {
+      if (dropdownRef.current && event.target instanceof Node && !dropdownRef.current.contains(event.target)) {
         setIsServicesOpen(false);
       }
     };
@@ -110,40 +109,51 @@ const Navbar2 = () => {
                 key={link.path} 
                 variants={linkVariants}
                 className="relative"
-                ref={link.hasSubmenu ? servicesRef : null}
-                onMouseEnter={() => link.hasSubmenu && setIsServicesOpen(true)}
-                onMouseLeave={() => link.hasSubmenu && setIsServicesOpen(false)}
               >
-                <NavLink 
-                  to={link.path}
-                  className={({ isActive }) => 
-                    isActive 
-                      ? 'text-secondary font-semibold' 
-                      : `${isScrolled ? 'text-dark' : 'text-white'} hover:text-primary transition-colors`
-                  }
-                >
-                  {link.name}
-                </NavLink>
-
-                {/* Dropdown Menu para Servicios */}
-                {link.hasSubmenu && (
-                  <motion.div 
-                    className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-50 py-2"
-                    initial="hidden"
-                    animate={isServicesOpen ? "visible" : "hidden"}
-                    variants={dropdownVariants}
+                {link.hasSubmenu ? (
+                  <div ref={dropdownRef} className="dropdown-wrapper inline-block relative">
+                    {/* Usamos NavLink para mantener la funcionalidad de navegación */}
+                    <NavLink 
+                      to={link.path}
+                      className={({ isActive }) => 
+                        `${isActive ? 'text-secondary font-semibold' : `${isScrolled ? 'text-dark' : 'text-white'} hover:text-primary`} transition-colors service-link`
+                      }
+                      onMouseEnter={() => setIsServicesOpen(true)}
+                    >
+                      {link.name}
+                    </NavLink>
+                    
+                    <motion.div 
+                      className={`absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-50 py-2 ${isServicesOpen ? 'block' : 'hidden'}`}
+                      initial="hidden"
+                      animate={isServicesOpen ? "visible" : "hidden"}
+                      variants={dropdownVariants}
+                      onMouseEnter={() => setIsServicesOpen(true)}
+                      onMouseLeave={() => setIsServicesOpen(false)}
+                    >
+                      {services.map((service) => (
+                        <Link 
+                          key={service.id}
+                          to={`/servicios/${service.route}`}
+                          className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-primary transition-colors"
+                          onClick={() => setIsServicesOpen(false)}
+                        >
+                          {service.title}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  </div>
+                ) : (
+                  <NavLink 
+                    to={link.path}
+                    className={({ isActive }) => 
+                      isActive 
+                        ? 'text-secondary font-semibold' 
+                        : `${isScrolled ? 'text-dark' : 'text-white'} hover:text-primary transition-colors`
+                    }
                   >
-                    {services.map((service) => (
-                      <Link 
-                        key={service.id}
-                        to={`/servicios/${service.route}`}
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-primary transition-colors"
-                        onClick={() => setIsServicesOpen(false)}
-                      >
-                        {service.title}
-                      </Link>
-                    ))}
-                  </motion.div>
+                    {link.name}
+                  </NavLink>
                 )}
               </motion.li>
             ))}
@@ -173,27 +183,45 @@ const Navbar2 = () => {
                 <li key={link.path} className="w-full">
                   {link.hasSubmenu ? (
                     <div className="w-full">
-                      <button
-                        onClick={toggleServicesMenu}
-                        className="text-white hover:text-secondary transition-colors text-2xl w-full text-center mb-2"
+                      <NavLink
+                        to={link.path}
+                        className={({ isActive }) => 
+                          isActive 
+                            ? 'text-secondary font-semibold text-2xl block w-full text-center mb-2' 
+                            : 'text-white hover:text-secondary transition-colors text-2xl block w-full text-center mb-2'
+                        }
+                        onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {link.name}
+                      </NavLink>
+                      
+                      <button
+                        onClick={toggleServicesMenu}
+                        className="text-white hover:text-secondary transition-colors text-lg w-full text-center mb-2 italic"
+                      >
+                        Ver todos los servicios
                       </button>
                       
                       {isServicesOpen && (
                         <ul className="bg-white/10 rounded-md py-2 w-full">
                           {services.map((service) => (
                             <li key={service.id} className="my-2">
-                              <Link
+                              <NavLink 
                                 to={`/servicios/${service.route}`}
-                                className="text-white hover:text-secondary text-lg block px-4 py-1"
-                                onClick={() => {
+                                className={({ isActive }) => 
+                                  isActive 
+                                    ? 'text-secondary font-semibold text-lg block px-4 py-1' 
+                                    : 'text-white hover:text-secondary text-lg block px-4 py-1'
+                                }
+                                onClick={(e) => {
+                                  // Aseguramos que el evento sea manejado correctamente
+                                  e.stopPropagation();
                                   setIsMobileMenuOpen(false);
                                   setIsServicesOpen(false);
                                 }}
                               >
                                 {service.title}
-                              </Link>
+                              </NavLink>
                             </li>
                           ))}
                         </ul>

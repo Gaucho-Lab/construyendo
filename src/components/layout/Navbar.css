@@ -1,0 +1,18 @@
+/* Navbar.css */
+.dropdown-wrapper .service-link {
+    display: inline-block;
+    padding: 4px 0; /* Padding vertical solamente */
+    position: relative;
+    z-index: 60; /* Mayor que el z-index del dropdown */
+  }
+  
+  /* Asegura que el área de hover sea precisa */
+  .dropdown-wrapper .absolute {
+    z-index: 50;
+  }
+  
+  /* Un pequeño retraso antes de esconder el menú para mejorar la usabilidad */
+  .dropdown-wrapper .absolute.hidden {
+    transition: visibility 0.1s, opacity 0.1s;
+    transition-delay: 0.1s;
+  }
