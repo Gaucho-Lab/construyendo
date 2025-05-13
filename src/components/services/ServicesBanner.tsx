@@ -18,7 +18,7 @@ const ServicesBanner = () => {
       </div>
 
       {/* Banner Content */}
-      <div className="container-custom relative z-10 mt-12">
+      <div className="container-custom relative z-10 mt-8">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ const ServicesBanner = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-secondary font-semibold text-xl mb-4">
-            Viviendas en seco
+            Conocé lo que ofrecemos
             </h4>
           </motion.div>
 
@@ -36,18 +36,8 @@ const ServicesBanner = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            El sueño de la casa propia es posible.
+            Servicios
             </h1>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <p className="text-lg text-gray-200">
-            Nuestro sistema de viviendas modulares te permite tener tu hogar en 60 días.
-            </p>
           </motion.div>
         </div>
       </div>

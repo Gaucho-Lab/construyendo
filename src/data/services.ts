@@ -12,9 +12,9 @@ import {
   FaShip,
   FaBicycle,
   FaCarCrash,
-  FaPaw,
+  // FaPaw,
   FaUserInjured,
-  FaSolarPanel,
+  // FaSolarPanel,
   FaHouseDamage,
   FaPlaneDeparture,
   FaHotel,
@@ -118,6 +118,15 @@ export const services: Service[] = [
     icon: FaShieldAlt,
     imgs: 'seguros-patrimoniales',
     route: 'seguros-patrimoniales'
+  },
+  {
+    id: 'salud',
+    title: 'Salud',
+    description: 'Protección completa para tu patrimonio, familia y futuro.',
+    description2: 'Asegurá lo que más te importa con nuestros planes de seguros patrimoniales, de vida y ahorro. Protegemos tu hogar, vehículos y bienes personales contra diferentes riesgos, mientras te ofrecemos opciones para asegurar el bienestar financiero de tu familia con seguros de vida y planes de ahorro programado. Trabajamos con las principales compañías aseguradoras para brindarte la mejor cobertura con primas accesibles y atención personalizada en caso de siniestros.',
+    icon: FaShieldAlt,
+    imgs: 'salud',
+    route: 'salud'
   }
 ];
 
@@ -143,11 +152,6 @@ export const seguros: Seguro[] = [
     icon: FaGuitar,
   },
   {
-    id: 'TERMOTANQUES SOLARES',
-    title: 'TERMOTANQUES SOLARES',
-    icon: FaSolarPanel,
-  },
-  {
     id: 'BICICLETAS',
     title: 'BICICLETAS',
     icon: FaBicycle,
@@ -166,11 +170,6 @@ export const seguros: Seguro[] = [
     id: 'EMBARCACIONES',
     title: 'EMBARCACIONES',
     icon: FaShip,
-  },
-  {
-    id: 'MASCOTAS',
-    title: 'MASCOTAS',
-    icon: FaPaw,
   }
 
 ];

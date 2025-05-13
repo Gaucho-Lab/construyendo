@@ -12,6 +12,7 @@ import Electrodomesticos from './pages/Services/Electrodomesticos';
 import Construccion from './pages/Services/Construccion';
 import Asistencia from './pages/Services/Asistencia';
 import Patrimoniales from './pages/Services/Patrimoniales';
+import Salud from './pages/Services/Salud';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/servicios/construccion" element={<Construccion />} />
             <Route path="/servicios/prestamos-personales" element={<LoansPage />} />
             <Route path="/servicios/seguros-patrimoniales" element={<Patrimoniales />} />
+            <Route path="/servicios/salud" element={<Salud />} />
           <Route path="/asociate" element={<AsociatePage />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>

@@ -84,7 +84,7 @@ const Navbar2 = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-light shadow-md py-3' 
-          : 'bg-transparent py-5'
+          : 'bg-light/30 py-5'
       }`}
     >
       <div className="container-custom max-w-7xl">
@@ -98,7 +98,7 @@ const Navbar2 = () => {
             <img 
               src="./assets/logos/logo-amc.png" 
               alt="Construction Company" 
-              className="h-10 md:h-20 bg-light/30"
+              className="h-10 md:h-20"
             />
           </Link>
 

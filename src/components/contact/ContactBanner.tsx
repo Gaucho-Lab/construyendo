@@ -40,7 +40,7 @@ const ContactBanner = () => {
             </h1>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -48,7 +48,7 @@ const ContactBanner = () => {
             <p className="text-lg text-gray-200">
               Tenés alguna duda, o querés empezar un nuevo proyecto? Contactate con nuestro equipo para recibir ayuda de nuestros profesionales.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
