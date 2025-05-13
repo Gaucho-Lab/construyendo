@@ -40,10 +40,10 @@ const CtaSection = () => {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button to="/contact" size="lg">
+            <Button to="/contacto" size="lg">
               Contactanos
             </Button>
-            <Button to="/services" variant="outline" size="lg" className="text-white border-white hover:bg-white/20">
+            <Button to="/servicios" variant="outline" size="lg" className="text-white border-white hover:bg-white/20">
               Explorar Servicios
             </Button>
           </motion.div>
