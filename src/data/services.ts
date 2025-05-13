@@ -15,6 +15,7 @@ import {
   // FaPaw,
   FaUserInjured,
   // FaSolarPanel,
+  FaMedkit,
   FaHouseDamage,
   FaPlaneDeparture,
   FaHotel,
@@ -122,9 +123,9 @@ export const services: Service[] = [
   {
     id: 'salud',
     title: 'Salud',
-    description: 'Protección completa para tu patrimonio, familia y futuro.',
-    description2: 'Asegurá lo que más te importa con nuestros planes de seguros patrimoniales, de vida y ahorro. Protegemos tu hogar, vehículos y bienes personales contra diferentes riesgos, mientras te ofrecemos opciones para asegurar el bienestar financiero de tu familia con seguros de vida y planes de ahorro programado. Trabajamos con las principales compañías aseguradoras para brindarte la mejor cobertura con primas accesibles y atención personalizada en caso de siniestros.',
-    icon: FaShieldAlt,
+    description: 'Servicios médicos de calidad con beneficios exclusivos para asociados.',
+    description2: 'Cuidá tu bienestar con nuestros servicios de salud integrales que incluyen consultas médicas, estudios diagnósticos y tratamientos con importantes descuentos. Accedé a una red de profesionales y centros médicos de primer nivel con tiempos de espera reducidos y precios preferenciales. Además, contamos con programas de prevención, telemedicina y servicios de emergencia disponibles las 24 horas para brindarte tranquilidad y atención cuando más lo necesites.',
+    icon: FaMedkit,  // Sugerencia de cambio de ícono a uno más relacionado con salud
     imgs: 'salud',
     route: 'salud'
   }
