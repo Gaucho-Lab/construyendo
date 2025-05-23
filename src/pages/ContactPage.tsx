@@ -1,9 +1,9 @@
 import ContactBanner from '../components/contact/ContactBanner';
-import ContactForm from '../components/contact/ContactForm';
+// import ContactForm from '../components/contact/ContactForm';
 import ContactInfo from '../components/contact/ContactInfo';
 import SectionTitle from '../components/ui/SectionTitle';
 import AnimatedElement from '../components/ui/AnimatedElement';
-import { FaPhone, FaEnvelope, FaClock, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
@@ -12,7 +12,7 @@ const ContactPage = () => {
       
       <section className="section bg-light">
         <div className="container-custom max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
             <div>
               <AnimatedElement animation="fade-in">
                 <SectionTitle
@@ -26,9 +26,15 @@ const ContactPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <ContactInfo
                     icon={FaPhone}
-                    title="Teléfono"
-                    content="(341) 152 125253"
+                    title="Teléfono Administración"
+                    content="(341) 212 5253"
                     link="tel:+3412125253"
+                  />
+                  <ContactInfo
+                    icon={FaPhone}
+                    title="Teléfono Socios"
+                    content="(341) 583 7352"
+                    link="tel:+3415837352"
                   />
                   <ContactInfo
                     icon={FaEnvelope}
@@ -36,16 +42,15 @@ const ContactPage = () => {
                     content="info@contruyendo.org.ar"
                     link="mailto:info@contruyendo.org.ar"
                   />
-                  <ContactInfo
+                  {/* <ContactInfo
                     icon={FaClock}
                     title="Horarios"
-                    content="Lun-Vier: 8AM - 6PM"
-                    secondLine="Sat: 9AM - 1PM"
-                  />
+                    content="Lunes a Viernes de 8 a 18"
+                  /> */}
                   <ContactInfo
                     icon={FaMapMarkerAlt}
                     title="Direccion"
-                    content="Rioja 1150 - Local 2"
+                    content="Italia 724"
                     secondLine="Rosario, Santa Fe"
                     link="https://maps.google.com"
                   />
@@ -60,14 +65,14 @@ const ContactPage = () => {
                       <span className="font-medium">Lunes - Viernes</span>
                       <span>8:00 AM - 6:00 PM</span>
                     </div>
-                    <div className="flex items-center justify-between pb-2 border-b border-gray-200">
+                    {/* <div className="flex items-center justify-between pb-2 border-b border-gray-200">
                       <span className="font-medium">Sábados</span>
                       <span>9:00 AM - 1:00 PM</span>
                     </div>
                     <div className="flex items-center justify-between pb-2">
                       <span className="font-medium">Domingos</span>
                       <span>Cerrado</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </AnimatedElement>
@@ -125,9 +130,9 @@ const ContactPage = () => {
               </AnimatedElement>
             </div>
             
-            <AnimatedElement animation="slide-in-right">
+            {/* <AnimatedElement animation="slide-in-right">
               <ContactForm />
-            </AnimatedElement>
+            </AnimatedElement> */}
           </div>
         </div>
       </section>
@@ -144,8 +149,8 @@ const ContactPage = () => {
           </AnimatedElement>
 
           <div className="w-full border-2 mt-6 max-w-7xl">
-            <iframe width="100%" height="600"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rioja%201150%20-%20Local%202+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
+            <iframe width="100%" height="600" scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=italia%20724,%20rosario,%20santa%20fe+(Construyendo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.gps.ie/collections/personal-trackers/">real-time gps tracker,</a></iframe>
           </div>
         </div>
       </section>

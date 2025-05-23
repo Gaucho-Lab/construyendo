@@ -1,15 +1,17 @@
 import SectionTitle from '../components/ui/SectionTitle';
 import AnimatedElement from '../components/ui/AnimatedElement';
-import { FaIdCard, FaUsers, FaHandshake } from 'react-icons/fa';
+import { FaIdCard, FaUsers, FaHandshake, FaPlus } from 'react-icons/fa';
 import OficinasSection from '@/components/asociate/oficinas';
 import AsociateBanner from '@/components/asociate/asociatebanner';
 
 import { IconType } from 'react-icons';
+import { Link } from 'react-router-dom';
 
 interface BenefitCardProps {
     icon: IconType;
     title: string;
     description: string;
+    button?: React.ReactNode;
   }
   
   interface PlanCardProps {
@@ -34,7 +36,7 @@ interface BenefitCardProps {
 // };
 
 
-const BenefitCard = ({ icon: Icon, title, description }: BenefitCardProps) => {
+const BenefitCard = ({ icon: Icon, title, description, button }: BenefitCardProps) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <div className="text-primary-600 mb-4">
@@ -42,6 +44,12 @@ const BenefitCard = ({ icon: Icon, title, description }: BenefitCardProps) => {
       </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
+      
+      {button && (
+        <div className="mt-4">
+          {button}
+        </div>
+      )}
     </div>
   );
 };
@@ -93,24 +101,46 @@ const AsociatePage = () => {
               description="Descubre todas las ventajas de formar parte de nuestra mutual"
               center
             />
+            <div className="flex justify-center">
+              <a
+                href="https://api.whatsapp.com/send/?phone=543415837352&text=Hola%2C+me+comunico+desde+la+website%2C+quisiera+realizar+una+consulta.&type=phone_number&app_absent=0"
+                className="bg-green-500 rounded-full p-3 hover:bg-green-600 transition-all hover:-translate-y-1 flex"
+                target="_blank"
+                rel="noopener noreferrer"
+              > 
+                <img
+                  src="./assets/images/WhatsApp.svg"
+                  alt="Contact us on WhatsApp"
+                  className="w-8 h-8"
+                />
+                <p className="text-white  p-1 rounded-full">Comunicate con nosotros</p>
+              </a>
+            </div>
           </AnimatedElement>
           
           <AnimatedElement animation="fade-in" delay={0.2} className="mt-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <BenefitCard 
                 icon={FaHandshake}
-                title="Respaldo financiero"
+                title="Ayudas Económicas"
                 description="Accede a préstamos personales con tasas preferenciales y planes adaptados a tus necesidades."
               />
               <BenefitCard 
                 icon={FaUsers}
-                title="Comunidad solidaria"
+                title="Comunidad Solidaria"
                 description="Forma parte de una red de apoyo mutuo con valores compartidos y compromiso social."
               />
               <BenefitCard 
                 icon={FaIdCard}
-                title="Descuentos exclusivos"
+                title="Descuentos Exclusivos"
                 description="Obtén descuentos especiales en comercios asociados y servicios de salud complementarios."
+                button={<Link to="/beneficios" className="bg-primary hover:bg-primary/80 text-white px-4 py-2 rounded inline-block">Beneficios</Link>}
+              />
+              <BenefitCard 
+                icon={FaPlus}
+                title="Servicios"
+                description="Ofrecemos un rango de servicios de construcción apuntado a satisfacer tus necesidades especificas, residenciales, comerciales e industriales."
+                button={<Link to="/servicios" className="bg-primary hover:bg-primary/80 text-white px-4 py-2 rounded inline-block">Servicios</Link>}
               />
             </div>
           </AnimatedElement>
@@ -120,7 +150,7 @@ const AsociatePage = () => {
       <OficinasSection />
       
       
-      <section className="section">
+      {/* <section className="section">
         <div className="container-custom max-w-7xl">
           <AnimatedElement animation="fade-in">
             <SectionTitle
@@ -169,7 +199,7 @@ const AsociatePage = () => {
             </div>
           </AnimatedElement>
         </div>
-      </section>
+      </section> */}
       
       
     </>

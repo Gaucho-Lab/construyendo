@@ -41,9 +41,9 @@ const Navbar2 = () => {
   };
 
   const navLinks = [
-    { name: 'Inicio', path: '/construyendo' },
-    { name: 'Asociate', path: '/asociate' },
+    { name: 'Beneficios', path: '/beneficios' },
     { name: 'Servicios', path: '/servicios', hasSubmenu: true },
+    { name: 'Asociate', path: '/asociate' },
     { name: 'Contacto', path: '/contacto' },
   ];
 

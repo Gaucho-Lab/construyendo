@@ -76,6 +76,15 @@ export const services: Service[] = [
     route: 'electrodomesticos'
   },
   {
+    id: 'salud',
+    title: 'Salud',
+    description: 'Servicios médicos de calidad con beneficios exclusivos para asociados.',
+    description2: 'Cuidá tu bienestar con nuestros servicios de salud integrales que incluyen consultas médicas, estudios diagnósticos y tratamientos con importantes descuentos. Accedé a una red de profesionales y centros médicos de primer nivel con tiempos de espera reducidos y precios preferenciales. Además, contamos con programas de prevención, telemedicina y servicios de emergencia disponibles las 24 horas para brindarte tranquilidad y atención cuando más lo necesites.',
+    icon: FaMedkit,  // Sugerencia de cambio de ícono a uno más relacionado con salud
+    imgs: 'salud',
+    route: 'salud'
+  },
+  {
     id: 'turismo',
     title: 'Turismo',
     description: 'Paquetes nacionales e internacionales con tarifas preferenciales.',
@@ -119,15 +128,6 @@ export const services: Service[] = [
     icon: FaShieldAlt,
     imgs: 'seguros-patrimoniales',
     route: 'seguros-patrimoniales'
-  },
-  {
-    id: 'salud',
-    title: 'Salud',
-    description: 'Servicios médicos de calidad con beneficios exclusivos para asociados.',
-    description2: 'Cuidá tu bienestar con nuestros servicios de salud integrales que incluyen consultas médicas, estudios diagnósticos y tratamientos con importantes descuentos. Accedé a una red de profesionales y centros médicos de primer nivel con tiempos de espera reducidos y precios preferenciales. Además, contamos con programas de prevención, telemedicina y servicios de emergencia disponibles las 24 horas para brindarte tranquilidad y atención cuando más lo necesites.',
-    icon: FaMedkit,  // Sugerencia de cambio de ícono a uno más relacionado con salud
-    imgs: 'salud',
-    route: 'salud'
   }
 ];
 

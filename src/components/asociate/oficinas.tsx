@@ -12,7 +12,7 @@ interface OfficeCardProps {
 
 const OfficeCard = ({ name, address, phone, hours, mapLink }: OfficeCardProps) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow grid justify-center">
       <h3 className="text-xl font-bold text-primary-700 mb-3">{name}</h3>
       
       <div className="space-y-3">
@@ -68,48 +68,14 @@ const OfficeCard = ({ name, address, phone, hours, mapLink }: OfficeCardProps) =
 const OficinasSection = () => {
   const offices = [
     {
-      name: "Sucursal Centro",
-      address: "Mitre 362",
-      phone: "3412441459",
+      name: "Rosario Centro",
+      address: "Italia 724",
+      phone: "3412125253",
       hours: [
         "Lunes a viernes de 8:00 a 19:00 hs",
         "Sábados de 8:30 a 12:30 hs"
       ],
       mapLink: "https://maps.google.com/?q=Mitre+362+Rosario+Santa+Fe"
-    },
-    {
-      name: "Oficina Urquiza",
-      address: "Urquiza 1539",
-      hours: [
-        "Lunes a viernes de 8:00 a 20:00 hs"
-      ],
-      mapLink: "https://maps.google.com/?q=Urquiza+1539+Rosario+Santa+Fe"
-    },
-    {
-      name: "Oficina Fisherton",
-      address: "Av. Eva Perón 8032",
-      hours: [
-        "Lunes a viernes de 8:30 a 21:00 hs",
-        "Sábados de 9:00 a 14:00 hs"
-      ],
-      mapLink: "https://maps.google.com/?q=Av.+Eva+Perón+8032+Rosario+Santa+Fe"
-    },
-    {
-      name: "Oficina Corrientes",
-      address: "Corrientes 430 – PB",
-      hours: [
-        "Lunes a viernes de 11:00 a 19:00 hs",
-        "Sábados de 8:00 a 12:00 hs"
-      ],
-      mapLink: "https://maps.google.com/?q=Corrientes+430+Rosario+Santa+Fe"
-    },
-    {
-      name: "Club Tiro Suizo",
-      address: "Lamadrid 1205",
-      hours: [
-        "Lunes a viernes de 11:00 a 14:30 hs"
-      ],
-      mapLink: "https://maps.google.com/?q=Lamadrid+1205+Rosario+Santa+Fe"
     }
   ];
 
@@ -118,15 +84,16 @@ const OficinasSection = () => {
       <div className="container-custom max-w-7xl">
         <AnimatedElement animation="fade-in">
           <SectionTitle
-            subtitle="Nuestras Sucursales"
+            subtitle=""
             title="ACERCATE PERSONALMENTE"
-            description="Visítanos en cualquiera de nuestras sucursales para recibir atención personalizada"
+            description="Visítanos en nuestra sucursal para recibir atención personalizada"
             center
           />
         </AnimatedElement>
         
         <AnimatedElement animation="fade-in" delay={0.2} className="mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center">
+            <div></div>
             {offices.map((office, index) => (
               <OfficeCard
                 key={index}
@@ -137,6 +104,7 @@ const OficinasSection = () => {
                 mapLink={office.mapLink}
               />
             ))}
+            <div></div>
           </div>
         </AnimatedElement>
       </div>

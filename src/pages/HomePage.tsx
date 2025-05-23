@@ -5,7 +5,7 @@ import ServicesPreview from '../components/home/ServicesPreview';
 // import TestimonialsSection from '../components/home/TestimonialsSection';
 import CtaSection from '../components/home/CtaSection';
 import RapiPago from '../components/home/RapiPago';
-import RenovaHO from '@/components/home/RenovaTuHomeOffice';
+// import RenovaHO from '@/components/home/RenovaTuHomeOffice';
 import HaceteSocio from '@/components/home/HaceteSocio';
 
 const HomePage = () => {
@@ -17,7 +17,7 @@ const HomePage = () => {
       {/* <ProjectsShowcase /> */}
       {/* <TestimonialsSection /> */}
       <RapiPago />
-      <RenovaHO />
+      {/* <RenovaHO /> */}
       <CtaSection />
     </>
   );
