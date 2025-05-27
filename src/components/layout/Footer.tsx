@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              Web by <a href="https://www.gaucholab.com/">GauchoLab</a>
+              Web by <a href="https://www.gaucholab.com/" className="hover:text-secondary transition-colors"><u>GauchoLab</u></a>
           </p>
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} Construyendo. All rights reserved.
