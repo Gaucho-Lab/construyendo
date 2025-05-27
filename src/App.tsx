@@ -13,6 +13,7 @@ import Construccion from './pages/Services/Construccion';
 import Asistencia from './pages/Services/Asistencia';
 import Patrimoniales from './pages/Services/Patrimoniales';
 import Salud from './pages/Services/Salud';
+import BenefitsPage from './pages/BenefitsPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/construyendo" element={<HomePage />} />
+          <Route path="/beneficios" element={<BenefitsPage />} />
           <Route path="/servicios" element={<ServicesPage />} />
             <Route path="/servicios/proveeduria" element={<Proveeduria />} />
             <Route path="/servicios/electrodomesticos" element={<Electrodomesticos />} />

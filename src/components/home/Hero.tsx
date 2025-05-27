@@ -1,21 +1,21 @@
 import { motion } from 'framer-motion';
-import { FaAward, FaUsers } from 'react-icons/fa';
+// import { FaAward, FaUsers } from 'react-icons/fa';
 import AnimatedElement from '../ui/AnimatedElement';
 import Button from '../ui/Button';
 
 const Hero = () => {
-  const achievements = [
-    {
-      icon: FaAward,
-      value: 'XX+',
-      label: 'Años de experiencia',
-    },
-    {
-      icon: FaUsers,
-      value: 'XX+',
-      label: 'Clientes contentos',
-    }
-  ];
+  // const achievements = [
+  //   {
+  //     icon: FaAward,
+  //     value: 'XX+',
+  //     label: 'Años de experiencia',
+  //   },
+  //   {
+  //     icon: FaUsers,
+  //     value: 'XX+',
+  //     label: 'Clientes contentos',
+  //   }
+  // ];
 
   return (
     <section className="relative min-h-[100svh] md:h-screen flex items-center text-lg py-16 md:py-0">
@@ -81,7 +81,7 @@ const Hero = () => {
             </AnimatedElement>
 
             {/* Achievements */}
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            {/* <div className="grid grid-cols-2 gap-4 mt-8">
               {achievements.slice(0, 2).map((item, index) => (
                 <AnimatedElement
                   key={index}
@@ -96,7 +96,7 @@ const Hero = () => {
                   <p className="text-white/80 text-xs">{item.label}</p>
                 </AnimatedElement>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Content Right */}
@@ -138,7 +138,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile Achievements - Visible only on mobile/tablet */}
-        <div className="grid grid-cols-2 gap-3 mt-6 lg:hidden">
+        {/* <div className="grid grid-cols-2 gap-3 mt-6 lg:hidden">
           {achievements.slice(0, 2).map((item, index) => (
             <AnimatedElement
               key={index}
@@ -153,7 +153,7 @@ const Hero = () => {
               <p className="text-white/80 text-xs">{item.label}</p>
             </AnimatedElement>
           ))}
-        </div>
+        </div> */}
 
         
       </div>

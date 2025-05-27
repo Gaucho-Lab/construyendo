@@ -16,7 +16,7 @@ const SectionTitle = ({
   light = false,
 }: SectionTitleProps) => {
   return (
-    <div className={`max-w-3xl ${center ? 'mx-auto text-center' : ''} mb-12`}>
+    <div className={`max-w-4xl ${center ? 'mx-auto text-center' : ''} mb-12`}>
       {subtitle && (
         <AnimatedElement animation="fade-in">
           <h4 className={`text-lg font-semibold ${light ? 'text-secondary' : 'text-secondary'} mb-2`}>

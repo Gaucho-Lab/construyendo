@@ -36,7 +36,7 @@ interface BenefitCardProps {
 // };
 
 
-const BenefitCard = ({ icon: Icon, title, description, button }: BenefitCardProps) => {
+export const BenefitCard = ({ icon: Icon, title, description, button }: BenefitCardProps) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <div className="text-primary-600 mb-4">
@@ -96,7 +96,7 @@ const AsociatePage = () => {
         <div className="container-custom max-w-7xl">
           <AnimatedElement animation="fade-in">
             <SectionTitle
-              subtitle="Beneficios"
+              subtitle=""
               title="¿Por qué asociarte con nosotros?"
               description="Descubre todas las ventajas de formar parte de nuestra mutual"
               center
