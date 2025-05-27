@@ -61,7 +61,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <FaMapMarkerAlt className="text-secondary mt-1 mr-3" />
                 <span className="text-gray-300">
-                  Rioja 1150 - Local 2
+                  Italia 724
                 </span>
               </li>
               <li className="flex items-center">
@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              Web by GauchoLab
+              Web by <a href="https://www.gaucholab.com/">GauchoLab</a>
           </p>
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} Construyendo. All rights reserved.
