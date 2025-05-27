@@ -7,9 +7,12 @@ interface BenefitCardProps {
     title: string;
     description: string;
     button?: React.ReactNode;
+    vigencia?: string;
+    validez?: string;
+    direccion?: string;
   }
 
-export const BenefitCard = ({ image, title, description, button }: BenefitCardProps) => {
+export const BenefitCard = ({ image, title, description, button, vigencia, validez, direccion }: BenefitCardProps) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <div className="text-primary-600 mb-4 flex justify-center">
@@ -21,6 +24,24 @@ export const BenefitCard = ({ image, title, description, button }: BenefitCardPr
       {button && (
         <div className="mt-4">
           {button}
+        </div>
+      )}
+
+      {vigencia && (
+        <div className="mt-4">
+          <p className="text-gray-400 font-light text-sm text-right">Vigencia: {vigencia}</p>
+        </div>
+      )}
+
+      {validez && (
+        <div>
+          <p className="text-gray-400 font-light text-sm text-right">{validez}</p>
+        </div>
+      )}
+      
+      {direccion && (
+        <div>
+          <p className="text-gray-400 font-light text-sm text-right">{direccion}</p>
         </div>
       )}
     </div>
@@ -54,6 +75,9 @@ const BenefitsPage = () => {
                 image="./assets/images/ovalo.png"
                 title="El Óvalo Sports"
                 description="20% de descuento en alquiler de canchas, cumpleaños infantiles y en la academia formativa"
+                vigencia="31 / 12 / 2025"
+                validez="Beneficio válido para días hábiles, no acumulable con otras promociones."
+                direccion="Av. Dante Alighieri 2485 - info@elovalo.com - elovalo.com.ar - 341 7403871"
               />
             </div>
           </AnimatedElement>
