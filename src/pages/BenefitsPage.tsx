@@ -1,5 +1,6 @@
 import AnimatedElement from "@/components/ui/AnimatedElement";
 import BenefitsBanner from "@/components/benefits/BenefitsBanner";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 interface BenefitCardProps {
     image?: string,
@@ -32,6 +33,15 @@ const BenefitsPage = () => {
         <BenefitsBanner />
       <section className="section">
         <div className="container-custom max-w-7xl">
+
+          <AnimatedElement animation="fade-in">
+            <SectionTitle
+              subtitle=""
+              title="Mirá todos los beneficios que podes aprovechar"
+              description="Descubrí todas las ventajas de formar parte de nuestra mutual"
+              center
+            />
+          </AnimatedElement>
           
           <AnimatedElement animation="fade-in" delay={0.2} className="mt-12 grid justify-items-center">
             <div className="grid grid-cols-1 gap-6 max-w-3xl">

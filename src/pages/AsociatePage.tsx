@@ -98,7 +98,7 @@ const AsociatePage = () => {
             <SectionTitle
               subtitle=""
               title="¿Por qué asociarte con nosotros?"
-              description="Descubre todas las ventajas de formar parte de nuestra mutual"
+              description="Descubrí todas las ventajas de formar parte de nuestra mutual"
               center
             />
             <div className="flex justify-center">
