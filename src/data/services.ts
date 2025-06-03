@@ -63,7 +63,7 @@ export const services: Service[] = [
     description: 'Acceso a productos de consumo diario con precios preferenciales para asociados.',
     description2: 'Acceso a productos de consumo diario con precios preferenciales y opciones de financiamiento exclusivas para asociados. Contamos con una amplia variedad de alimentos, artículos de limpieza, perfumería y más, todo en un solo lugar y con la posibilidad de comprar en cuotas sin interés con tarjetas seleccionadas. Además, ofrecemos entregas a domicilio y promociones semanales para maximizar tu ahorro.',
     icon: FaShoppingCart,
-    imgs: 'proveeduria',
+    imgs: 'local/local-2',
     route: 'proveeduria'
   },
   {
@@ -90,7 +90,7 @@ export const services: Service[] = [
     description: 'Paquetes nacionales e internacionales con tarifas preferenciales.',
     description2: 'Descubrí el mundo con nuestros paquetes turísticos nacionales e internacionales diseñados con tarifas preferenciales y financiamiento exclusivo. Trabajamos con las mejores operadoras para ofrecerte experiencias únicas, desde escapadas de fin de semana hasta vacaciones de ensueño. Nuestro equipo especializado te asesorará en cada paso, desde la elección del destino hasta el regreso a casa.',
     icon: FaUmbrellaBeach,
-    imgs: 'turismo',
+    imgs: 'local/local-5',
     route: 'turismo'
   },
   {
@@ -108,7 +108,7 @@ export const services: Service[] = [
     description: 'Soluciones integrales para construcción y mejoras en tu hogar.',
     description2: 'Hacé realidad el sueño de tu casa propia o renovála con nuestras soluciones integrales de construcción y refacción. Ofrecemos sistemas de construcción tradicional y en seco, con asesoramiento técnico profesional y opciones de financiamiento adaptadas a tu presupuesto. Nuestros especialistas te acompañan desde el diseño del proyecto hasta la finalización de la obra, garantizando calidad y cumplimiento de plazos.',
     icon: FaHardHat,
-    imgs: 'construction',
+    imgs: 'local/local-4',
     route: 'construccion'
   },
   {

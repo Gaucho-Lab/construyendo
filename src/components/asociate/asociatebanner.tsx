@@ -5,7 +5,7 @@ const AsociateBanner = () => {
         <section className="relative h-80 md:h-96 flex items-center">
         {/* Background Image with Overlay */}
         <div className="">
-            <video 
+            {/* <video 
                 className="absolute top-0 left-0 w-full h-full object-cover" // Added scale-[0.85] to zoom out
                 autoPlay
                 muted
@@ -13,7 +13,11 @@ const AsociateBanner = () => {
                 playsInline
             >
                 <source src="./videos/asociate2.mp4" type="video/mp4" />
-            </video>
+            </video> */}
+            <img 
+            src="./assets/images/local/local-5.jpg"
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-dark/80 to-dark/50" />
         </div>
   

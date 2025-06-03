@@ -39,7 +39,7 @@ const HaceteSocio = () => {
       ref={sectionRef}
       className="relative py-20 md:py-24 lg:py-32 bg-cover bg-center"
       style={{
-        backgroundImage: "url('./assets/images/socios.jpg')",
+        backgroundImage: "url('./assets/images/local/local-2.jpg')",
         backgroundAttachment: "fixed"
       }}
     >
